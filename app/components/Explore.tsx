@@ -35,7 +35,7 @@ const Explore = () => {
           <Button />
         </div>
 
-        <div className="relative w-[40%] h-[300px] rounded-[12px]">
+        <div className="relative max-w-[560px] w-[40%] h-[300px] rounded-[12px]">
           <div className="relative w-full h-full bg-[#2CAEE9] rounded-[12px] px-[40px] py-[20px]">
             <ul className="text-[13px] text-white leading-[20px]">
               <li>

@@ -23,7 +23,7 @@ const Reason = () => {
             </p>
           </div>
 
-          <div className="relative w-[35%] h-[388px] rounded-[20px] overflow-hidden">
+          <div className="relative max-w-[300px] w-[35%] h-[388px] rounded-[20px] overflow-hidden">
             <div className="absolute left-0 top-0 w-full h-full">
               <Image
                 className="object-cover"
