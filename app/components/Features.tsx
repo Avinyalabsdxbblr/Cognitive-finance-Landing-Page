@@ -30,10 +30,10 @@ const Features = () => {
       id="features"
       className="relative w-full min-h-screen pb-[60px] bg-[#000000] text-white"
     >
-      <h1 className="pt-[120px] pl-[100px] text-[48px] font-[600] font-Sora">
+      <h1 className="pt-[120px] pl-[40px] xmd:pl-[100px] text-[48px] font-[600] font-Sora leading-[1.1]">
         Explore Our Features
       </h1>
-      <div className="absolute right-0 top-[-170px] w-[40%] aspect-square">
+      <div className="hidden xmd:block absolute right-0 top-[-170px] w-[40%] aspect-square">
         <Image fill className="object-contain" src="/lappy.png" alt="laptop" />
       </div>
 
@@ -56,23 +56,40 @@ const Features = () => {
           alt="star"
         />
 
-        <div className="relative ml-[400px] flex gap-[20px]">
+        <div className="px-[30px] relative ml-0 xmd:ml-[200px] lg:ml-[400px] flex flex-col md:flex-row gap-[20px]">
           {features.map((feature, i) => (
             <div
               key={i}
               onClick={() => setIsOpen(i)}
               className={`${
-                isOpen != i ? "w-[120px]" : "w-[360px]"
-              } h-[400px] bg-[#121212] rounded-[8px] duration-300 cursor-pointer overflow-hidden`}
+                isOpen != i
+                  ? "w-full md:w-[25%] xmd:w-[120px]"
+                  : "w-full xmd:w-[360px]"
+              } h-fit md:h-[450px] xl:h-[400px] bg-[#121212] rounded-[8px] duration-300 cursor-pointer overflow-hidden`}
             >
-              {isOpen != i ? (
-                <div className="relative flex flex-col items-center pt-[10px]">
-                  <p className="text-[23.5px] italic font-bold">0{i + 1}.</p>
-                  <div className="absolute left-[50%] top-[35px] text-[21.56px] whitespace-nowrap origin-left rotate-[90deg]">
-                    {feature.title}
+              <div className="hidden md:block">
+                {isOpen != i ? (
+                  <div className="relative flex flex-col items-center pt-[10px]">
+                    <p className="text-[23.5px] italic font-bold">0{i + 1}.</p>
+                    <div className="absolute left-[50%] top-[35px] text-[21.56px] whitespace-nowrap origin-left rotate-[90deg]">
+                      {feature.title}
+                    </div>
                   </div>
-                </div>
-              ) : (
+                ) : (
+                  <div className="py-[28px] px-[40px]">
+                    <p className="text-[66.86px] italic font-bold leading-[1.1]">
+                      0{i + 1}.
+                    </p>
+                    <h1 className="mt-[10px] mb-[20px] text-[20px] font-bold font-Sora">
+                      {feature.title}
+                    </h1>
+                    <p className="text-[#FFFFFFB2] leading-[28px]">
+                      {feature.text}
+                    </p>
+                  </div>
+                )}
+              </div>
+              <div className="block md:hidden">
                 <div className="py-[28px] px-[40px]">
                   <p className="text-[66.86px] italic font-bold leading-[1.1]">
                     0{i + 1}.
@@ -84,7 +101,7 @@ const Features = () => {
                     {feature.text}
                   </p>
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>
