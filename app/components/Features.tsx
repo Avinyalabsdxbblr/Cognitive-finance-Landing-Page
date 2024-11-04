@@ -26,7 +26,10 @@ const Features = () => {
   const [isOpen, setIsOpen] = useState(0);
 
   return (
-    <div className="relative w-full min-h-screen pb-[60px] bg-[#000000] text-white">
+    <div
+      id="features"
+      className="relative w-full min-h-screen pb-[60px] bg-[#000000] text-white"
+    >
       <h1 className="pt-[120px] pl-[100px] text-[48px] font-[600] font-Sora">
         Explore Our Features
       </h1>

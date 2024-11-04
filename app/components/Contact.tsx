@@ -4,17 +4,20 @@ import { IoCheckmarkOutline as Mark } from "react-icons/io5";
 
 const Contact = () => {
   return (
-    <div className="relative mb-[200px] min-h-[562px] w-[90%] mx-auto flex flex-col items-center justify-center rounded-[10px] overflow-hidden">
+    <div
+      id="contact"
+      className="relative mb-[200px] min-h-[562px] w-[90%] mx-auto flex flex-col items-center justify-center rounded-[30px] md:rounded-[10px] overflow-hidden"
+    >
       <p className="relative z-[2] mb-[20px] text-center text-[36px] font-bold font-Poppins text-[#141414]">
         Get in touch
       </p>
-      <p className="relative z-[2] text-center font-bold 2xl:text-[20px] font-Poppins">
+      <p className="relative z-[2] max-w-[80%] text-center font-bold 2xl:text-[20px] font-Poppins">
         Contact us via email{" "}
         <span className="underline">support@cognitivefinance.xyz</span> or
         Telegram <span className="underline">@cognitivefinance_xyz.</span>
       </p>
 
-      <div className="relative z-[2] mt-[40px] mb-[50px] flex items-center justify-center gap-[20px]">
+      <div className="relative z-[2] mt-[40px] mb-[50px] flex flex-col md:flex-row items-center justify-center gap-[20px]">
         <span className="flex items-center gap-[5px]">
           <Mark className="text-[#047857]" />
           <p className="2xl:text-[17.9px] text-[#4F4F4F]">Cancel anytime</p>

@@ -4,13 +4,13 @@ import Button from "./Button";
 
 const About = () => {
   return (
-    <div className="mt-[75vh] mb-[25vh] relative w-full">
+    <div id="about" className="mt-[75vh] mb-[25vh] relative w-full">
       <div>
         <h1 className="text-[20px] font-[600] font-Sora text-center text-[#36394A]">
           Multichain support
         </h1>
 
-        <div className="mt-[30px] space-y-[10px]">
+        <div className="hidden lg:block mt-[30px] space-y-[10px]">
           <div className="flex justify-center items-center gap-[20px]">
             <Image
               className="object-contain"
@@ -80,8 +80,74 @@ const About = () => {
           </div>
         </div>
 
-        <div className="mt-[60px] flex items-center justify-center gap-[100px]">
-          <div className="relative max-w-[564px] w-[40%] h-[300px] rounded-[12px]">
+        <div className="mt-[30px] px-[20px] w-fit mx-auto grid lg:hidden justify-center grid-cols-3 gap-x-[20px] gap-y-[10px]">
+          <Image
+            className="object-contain"
+            width={160}
+            height={56}
+            src="/brand.svg"
+            alt="brand"
+          />
+          <Image
+            className="object-contain"
+            width={160}
+            height={56}
+            src="/brand.svg"
+            alt="brand"
+          />
+          <Image
+            className="object-contain"
+            width={160}
+            height={56}
+            src="/brand.svg"
+            alt="brand"
+          />
+          <Image
+            className="object-contain"
+            width={160}
+            height={56}
+            src="/brand.svg"
+            alt="brand"
+          />
+          <Image
+            className="object-contain"
+            width={160}
+            height={56}
+            src="/brand.svg"
+            alt="brand"
+          />
+          <Image
+            className="object-contain"
+            width={160}
+            height={56}
+            src="/brand.svg"
+            alt="brand"
+          />
+          <Image
+            className="object-contain"
+            width={160}
+            height={56}
+            src="/brand.svg"
+            alt="brand"
+          />
+          <Image
+            className="object-contain"
+            width={160}
+            height={56}
+            src="/brand.svg"
+            alt="brand"
+          />
+          <Image
+            className="object-contain"
+            width={160}
+            height={56}
+            src="/brand.svg"
+            alt="brand"
+          />
+        </div>
+
+        <div className="mt-[60px] px-[40px] flex flex-col-reverse lg:flex-row items-center justify-center gap-[50px] lg:gap-[100px]">
+          <div className="relative max-w-[564px] w-full lg:w-[40%] h-[250px] md:h-[300px] rounded-[12px]">
             <div className="relative w-full h-full bg-[#2CAEE9] rounded-[12px] px-[40px] py-[20px]">
               <ul className="text-[13px] text-white leading-[20px]">
                 <li>
@@ -108,7 +174,7 @@ const About = () => {
             </div>
             <div
               style={{ boxShadow: "0px 49px 100px 0px #1A2B3B99" }}
-              className="w-full h-full absolute left-[40px] top-[100px]"
+              className="w-full h-full absolute left-[20px] xmd:left-[40px] top-[40px] xmd:top-[100px]"
             >
               <Image
                 priority
@@ -121,14 +187,16 @@ const About = () => {
           </div>
 
           <div>
-            <h1 className="text-[36px] font-Poppins font-[600] leading-[60px] text-[#000000]">
-              Supercharge your <br /> transactions with lightning- <br />
-              fast speed using our AI- <br />
+            <h1 className="text-[36px] font-Poppins font-[600] leading-[1.3] lg:leading-[60px] text-[#000000]">
+              Supercharge your <br className="hidden lg:block" /> transactions
+              with lightning- <br className="hidden lg:block" />
+              fast speed using our AI- <br className="hidden lg:block" />
               powered platform.
             </h1>
             <p className="mt-[20px] mb-[30px] text-[20px] text-[#000000]">
-              Start transforming your on-chain activities effortlessly in <br />{" "}
-              just minutes with Cognitive Finance.
+              Start transforming your on-chain activities effortlessly in{" "}
+              <br className="hidden lg:block" /> just minutes with Cognitive
+              Finance.
             </p>
             <Button />
           </div>

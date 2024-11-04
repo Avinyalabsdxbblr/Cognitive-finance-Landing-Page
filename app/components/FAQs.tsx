@@ -14,7 +14,7 @@ const FAQs = () => {
       <p className="mt-[10px] text-[20px[] font-[500] text-center text-[#667085]">
         Can't find the answer you're looking for? Reach out to our{" "}
         <span className="underline">
-          customer <br />
+          customer <br className="hidden md:block" />
           support
         </span>{" "}
         team.
@@ -26,7 +26,7 @@ const FAQs = () => {
             key={i}
             className={`${
               isOpen != i ? "border border-[#EAEAEA]" : ""
-            } w-[55%] px-[15px] rounded-[8px]`}
+            } w-[90%] md:w-[80%] xmd:w-[55%] px-[15px] rounded-[8px]`}
           >
             <button
               onClick={() => {
@@ -34,15 +34,20 @@ const FAQs = () => {
               }}
               className="w-full py-[10px] flex items-center justify-between"
             >
-              <p className="text-[20px] font-[500] text-[#101828]">
+              <p className="text-left text-[20px] font-[500] text-[#101828]">
                 {item.question}
               </p>
               <div className="size-[20px] rounded-full border-[2px] border-[#071A34] grid place-items-center text-[#071A34]">
                 {isOpen != i ? <FiPlus /> : <FiMinus />}
               </div>
             </button>
-            <div className={`${isOpen == i ? "block" : "hidden"}`}>
-              <p className="w-[80%] text-[20px[] font-[500] text-[#667085] leading-[35px]">
+
+            <div
+              className={`${
+                isOpen == i ? "h-[190px] md:h-[150px] 2xl:h-[200px]" : "h-0"
+              } duration-300 overflow-hidden`}
+            >
+              <p className="w-full xmd:w-[80%] 2xl:text-[20px] font-[500] text-[#667085] leading-[35px]">
                 {item.answer}
               </p>
             </div>

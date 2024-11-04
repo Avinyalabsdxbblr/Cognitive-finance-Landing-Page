@@ -8,20 +8,24 @@ const Explore = () => {
       <h1 className="text-[36px] font-[600] text-center font-Poppins">
         Supercharge Your On-Chain Experience
       </h1>
-
-      <div className="mt-[20px] w-fit mx-auto grid grid-cols-3 gap-x-[10px] gap-y-[25px] justify-center">
+      <div className="hidden lg:grid mt-[20px] w-fit mx-auto grid-cols-3 gap-x-[10px] gap-y-[25px] justify-center">
         <Label />
         <Label />
         <Label />
         <Label />
         <Label />
+        <Label />
+        <Label />
+        <Label />
+        <Label />
+      </div>{" "}
+      <div className="lg:hidden mt-[20px] w-fit mx-auto grid grid-cols-1 gap-x-[10px] gap-y-[20px] md:gap-y-[25px] justify-center">
         <Label />
         <Label />
         <Label />
         <Label />
       </div>
-
-      <div className="mt-[100px] flex items-center justify-center gap-[100px]">
+      <div className="px-[50px] mt-[100px] flex flex-col lg:flex-row items-center justify-center gap-[50px] lg:gap-[100px]">
         <div>
           <h1 className="text-[36px] font-Poppins font-[600] leading-[60px] text-[#000000]">
             Ensuring Security & <br /> Compliance
@@ -35,7 +39,7 @@ const Explore = () => {
           <Button />
         </div>
 
-        <div className="relative max-w-[560px] w-[40%] h-[300px] rounded-[12px]">
+        <div className="relative max-w-[560px] w-full lg:w-[40%] h-[250px] xmd:h-[300px] rounded-[12px]">
           <div className="relative w-full h-full bg-[#2CAEE9] rounded-[12px] px-[40px] py-[20px]">
             <ul className="text-[13px] text-white leading-[20px]">
               <li>
@@ -59,7 +63,7 @@ const Explore = () => {
               </li>
             </ul>
           </div>
-          <div className="w-full h-full absolute right-[40px] overflow-hidden top-[100px] border-[5px] border-[#8465FF] rounded-[16px]">
+          <div className="w-full h-full absolute right-[20px] xmd:right-[40px] overflow-hidden top-[50px] xmd:top-[100px] border-[5px] border-[#8465FF] rounded-[16px]">
             <Image
               priority
               className="object-cover"
@@ -70,7 +74,6 @@ const Explore = () => {
           </div>
         </div>
       </div>
-
       <div className="relative mt-[200px] flex flex-col items-center justify-center">
         <div className="relative mx-auto mb-[40px] grid place-items-center">
           <div className="absolute top-[-130px] size-[384px]">

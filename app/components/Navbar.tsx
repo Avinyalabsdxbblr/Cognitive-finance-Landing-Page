@@ -22,8 +22,9 @@ const Navbar = () => {
         {sections.map((link, id) => (
           <Link
             key={id}
-            href={`/${link}`}
+            href={`#${link}`}
             className="text-[14.88px] text-[#222222]"
+            scroll={true}
           >
             {link}
           </Link>
