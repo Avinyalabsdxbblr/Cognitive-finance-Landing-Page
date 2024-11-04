@@ -4,7 +4,10 @@ import Button from "./Button";
 
 const About = () => {
   return (
-    <div id="about" className="mt-[75vh] mb-[25vh] relative w-full">
+    <div
+      id="about"
+      className="mt-[150px] md:mt-[75vh] mb-[25vh] relative w-full"
+    >
       <div>
         <h1 className="text-[20px] font-[600] font-Sora text-center text-[#36394A]">
           Multichain support
