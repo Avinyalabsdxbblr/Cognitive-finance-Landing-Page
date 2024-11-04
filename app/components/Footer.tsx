@@ -6,7 +6,7 @@ import { FaXTwitter as Tw } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="w-full min-h-[478px] bg-[#14171F] text-[#DDDDDE] flex flex-col justify-between">
-      <div className="flex-1 w-full py-[100px] xmd:py-0 px-[50px] xl:px-[100px] xmd:flex space-y-[50px] xmd:space-y-0 justify-between items-center">
+      <div className="flex-1 w-full py-[100px] xmd:py-0 px-[20px] vsm:px-[50px] xl:px-[100px] xmd:flex space-y-[50px] xmd:space-y-0 justify-between items-center">
         <div>
           <Image src="/logo.svg" width={48} height={44} alt="logo" />
           <p className="mt-[20px] mb-[40px]">

@@ -30,14 +30,14 @@ const Features = () => {
       id="features"
       className="relative w-full min-h-screen pb-[60px] bg-[#000000] text-white"
     >
-      <h1 className="pt-[120px] pl-[40px] xmd:pl-[100px] text-[48px] font-[600] font-Sora leading-[1.1]">
+      <h1 className="pt-[50px] vsm:pt-[120px] pl-[20px] vsm:pl-[40px] xmd:pl-[100px] text-[48px] font-[600] font-Sora leading-[1.1]">
         Explore Our Features
       </h1>
       <div className="hidden xmd:block absolute right-0 top-[-170px] w-[40%] aspect-square">
         <Image fill className="object-contain" src="/lappy.png" alt="laptop" />
       </div>
 
-      <div className="mt-[100px] relative w-full">
+      <div className="mt-[50px] vsm:mt-[100px] relative w-full">
         <div className="absolute left-0 w-[300px] aspect-square">
           <Image className="" fill src="/gradient.png" alt="gradient" />
         </div>
@@ -56,7 +56,7 @@ const Features = () => {
           alt="star"
         />
 
-        <div className="px-[30px] relative ml-0 xmd:ml-[200px] lg:ml-[400px] flex flex-col md:flex-row gap-[20px]">
+        <div className="px-[20px] vsm:px-[30px] relative ml-0 xmd:ml-[200px] lg:ml-[400px] flex flex-col md:flex-row gap-[20px]">
           {features.map((feature, i) => (
             <div
               key={i}

@@ -5,11 +5,11 @@ import Button from "./Button";
 
 const Hero = () => {
   return (
-    <div className="hero relative w-full min-h-[123vh]">
+    <div className="hero relative w-full min-h-[90vh] vsm:min-h-[123vh]">
       <Navbar />
 
       <div className="relative z-[2] mt-[60px] xmd:mt-[100px]">
-        <h1 className="text-[48px] md:text-[65px] xmd:text-[90px] font-bold text-center text-[#1A2B3B] font-Poppins leading-[90px]">
+        <h1 className="text-[34px] vsm:text-[48px] md:text-[65px] xmd:text-[90px] font-bold text-center text-[#1A2B3B] font-Poppins leading-[1.2] xmd:leading-[90px]">
           Cognitive Finance
         </h1>
 

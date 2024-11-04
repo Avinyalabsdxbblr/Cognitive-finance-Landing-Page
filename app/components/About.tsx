@@ -83,7 +83,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="mt-[30px] px-[20px] w-fit mx-auto grid lg:hidden justify-center grid-cols-3 gap-x-[20px] gap-y-[10px]">
+        <div className="mt-[20px] px-[20px] w-fit mx-auto grid lg:hidden justify-center grid-cols-3 gap-x-[20px] gap-y-[10px]">
           <Image
             className="object-contain"
             width={160}
@@ -149,9 +149,9 @@ const About = () => {
           />
         </div>
 
-        <div className="mt-[60px] px-[40px] flex flex-col-reverse lg:flex-row items-center justify-center gap-[50px] lg:gap-[100px]">
+        <div className="mt-[60px] px-[20px] vsm:px-[40px] flex flex-col-reverse lg:flex-row items-center justify-center gap-[50px] lg:gap-[100px]">
           <div className="relative max-w-[564px] w-full lg:w-[40%] h-[250px] md:h-[300px] rounded-[12px]">
-            <div className="relative w-full h-full bg-[#2CAEE9] rounded-[12px] px-[40px] py-[20px]">
+            <div className="hidden vsm:block relative w-full h-full bg-[#2CAEE9] rounded-[12px] px-[40px] py-[20px]">
               <ul className="text-[13px] text-white leading-[20px]">
                 <li>
                   <span className="text-[#687887] mr-[15px]">1</span> await
@@ -177,11 +177,11 @@ const About = () => {
             </div>
             <div
               style={{ boxShadow: "0px 49px 100px 0px #1A2B3B99" }}
-              className="w-full h-full absolute left-[20px] xmd:left-[40px] top-[40px] xmd:top-[100px]"
+              className="w-full h-full absolute left-0 vsm:left-[20px] xmd:left-[40px] top-0 vsm:top-[40px] xmd:top-[100px]"
             >
               <Image
                 priority
-                className="object-cover"
+                className="object-contain vsm:object-cover"
                 fill
                 src="/gptImg.svg"
                 alt="code"
@@ -190,7 +190,7 @@ const About = () => {
           </div>
 
           <div>
-            <h1 className="text-[36px] font-Poppins font-[600] leading-[1.3] lg:leading-[60px] text-[#000000]">
+            <h1 className="text-[30px] vsm:text-[36px] font-Poppins font-[600] leading-[1.3] lg:leading-[60px] text-[#000000]">
               Supercharge your <br className="hidden lg:block" /> transactions
               with lightning- <br className="hidden lg:block" />
               fast speed using our AI- <br className="hidden lg:block" />

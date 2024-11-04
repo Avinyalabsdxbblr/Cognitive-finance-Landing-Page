@@ -7,11 +7,11 @@ const FAQs = () => {
   const [isOpen, setIsOpen] = useState<null | number>(null);
 
   return (
-    <div className="mt-[50px] mb-[100px]">
+    <div className="mt-[50px] mb-[50px] sm:mb-[100px]">
       <h1 className="text-center text-[36px] font-[500] font-Poppins text-[#101828]">
         FAQs
       </h1>
-      <p className="mt-[10px] text-[20px[] font-[500] text-center text-[#667085]">
+      <p className="px-[20px] mt-[10px] text-[20px] font-[500] text-center text-[#667085]">
         Can't find the answer you're looking for? Reach out to our{" "}
         <span className="underline">
           customer <br className="hidden md:block" />
@@ -34,7 +34,7 @@ const FAQs = () => {
               }}
               className="w-full py-[10px] flex items-center justify-between"
             >
-              <p className="text-left text-[20px] font-[500] text-[#101828]">
+              <p className="text-left vsm:text-[20px] font-[500] text-[#101828]">
                 {item.question}
               </p>
               <div className="size-[20px] rounded-full border-[2px] border-[#071A34] grid place-items-center text-[#071A34]">
@@ -44,10 +44,12 @@ const FAQs = () => {
 
             <div
               className={`${
-                isOpen == i ? "h-[190px] md:h-[150px] 2xl:h-[200px]" : "h-0"
+                isOpen == i
+                  ? "h-[170px] vsm;h-[190px] md:h-[150px] 2xl:h-[200px]"
+                  : "h-0"
               } duration-300 overflow-hidden`}
             >
-              <p className="w-full xmd:w-[80%] 2xl:text-[20px] font-[500] text-[#667085] leading-[35px]">
+              <p className="w-full xmd:w-[80%] text-[14px] vsm:text-[16px] 2xl:text-[20px] font-[500] text-[#667085] leading-[1.8] vsm:leading-[35px]">
                 {item.answer}
               </p>
             </div>
