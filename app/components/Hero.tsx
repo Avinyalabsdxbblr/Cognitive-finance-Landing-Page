@@ -30,7 +30,7 @@ const Hero = () => {
         <Image fill className="object-cover" src="/heroBg.svg" alt="gradient" />
       </div>
 
-      <div className="absolute w-[90%] xmd:w-[75%] aspect-video left-1/2 -translate-x-1/2 bottom-[-10%] md:bottom-[-30%] xmd:bottom-[-40%] lg:bottom-[-50%]">
+      <div className="absolute w-[90%] xmd:w-[75%] aspect-video left-1/2 -translate-x-1/2 bottom-[-10%] md:bottom-[-30%] xmd:bottom-[-40%] lg:bottom-[-50%]  2xl:top-[90vh]">
         <Image
           fill
           className="object-contain"

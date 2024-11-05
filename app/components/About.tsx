@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="mt-[150px] md:mt-[75vh] mb-[25vh] relative w-full"
+      className="mt-[150px] md:mt-[75vh] mb-[100px] vsm:mb-[25vh] relative w-full"
     >
       <div>
         <h1 className="text-[20px] font-[600] font-Sora text-center text-[#36394A]">
@@ -175,10 +175,7 @@ const About = () => {
                 </li>
               </ul>
             </div>
-            <div
-              style={{ boxShadow: "0px 49px 100px 0px #1A2B3B99" }}
-              className="w-full h-full absolute left-0 vsm:left-[20px] xmd:left-[40px] top-0 vsm:top-[40px] xmd:top-[100px]"
-            >
+            <div className="boxShadow w-full h-full absolute left-0 vsm:left-[20px] xmd:left-[40px] top-0 vsm:top-[40px] xmd:top-[100px]">
               <Image
                 priority
                 className="object-contain vsm:object-cover"

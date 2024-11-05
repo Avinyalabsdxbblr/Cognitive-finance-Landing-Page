@@ -9,7 +9,7 @@ html {
   scroll-behavior: smooth;
 }
 
-@layer utilities {
+@layer components {
   .hero {
     background: linear-gradient(180deg, #fcfcfc 0%, #e1e5e9 50%, #cdd2d8 100%);
   }
@@ -19,5 +19,14 @@ html {
   }
   footer .links h1 {
     @apply text-[20px] font-bold text-[#FFFFFF];
+  }
+}
+
+.boxShadow {
+  box-shadow: 0px 49px 100px 0px #1a2b3b99;
+}
+@media screen and (max-width: 450px) {
+  .boxShadow {
+    box-shadow: none;
   }
 }
