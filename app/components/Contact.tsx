@@ -40,7 +40,7 @@ const Contact = () => {
           type="mail"
           placeholder="Enter email address"
         />
-        <button className="flex-1 sm:flex-auto w-[139px] h-full bg-[#1FA1FF] text-white font-Poppins">
+        <button className="flex-1 sm:flex-none w-[139px] h-full bg-[#1FA1FF] text-white font-Poppins">
           Join
         </button>
       </div>

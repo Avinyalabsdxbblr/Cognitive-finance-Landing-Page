@@ -45,7 +45,7 @@ const FAQs = () => {
             <div
               className={`${
                 isOpen == i
-                  ? "h-[170px] vsm;h-[190px] md:h-[150px] 2xl:h-[200px]"
+                  ? "h-[170px] vsm:h-[190px] md:h-[150px] 2xl:h-[200px]"
                   : "h-0"
               } duration-300 overflow-hidden`}
             >

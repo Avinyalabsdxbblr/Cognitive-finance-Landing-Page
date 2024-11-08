@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const Hero = () => {
   return (
-    <div className="hero relative w-full min-h-[90vh] vsm:min-h-[123vh]">
+    <div className="hero relative w-full min-h-[90vh] vsm:min-h-[830px]">
       <Navbar />
 
       <div className="relative z-[2] mt-[60px] xmd:mt-[100px]">
@@ -30,7 +30,7 @@ const Hero = () => {
         <Image fill className="object-cover" src="/heroBg.svg" alt="gradient" />
       </div>
 
-      <div className="absolute w-[90%] xmd:w-[75%] aspect-video left-1/2 -translate-x-1/2 bottom-[-10%] md:bottom-[-30%] xmd:bottom-[-40%] lg:bottom-[-50%]  2xl:top-[90vh]">
+      {/* <div className="absolute w-[90%] xmd:w-[75%] aspect-video left-1/2 -translate-x-1/2 top-[68%]">
         <Image
           fill
           className="object-contain"
@@ -38,7 +38,7 @@ const Hero = () => {
           alt="Chat"
           priority
         />
-      </div>
+      </div> */}
     </div>
   );
 };

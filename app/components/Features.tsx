@@ -30,7 +30,7 @@ const Features = () => {
       id="features"
       className="relative w-full min-h-screen pb-[60px] bg-[#000000] text-white"
     >
-      <h1 className="pt-[50px] vsm:pt-[120px] pl-[20px] vsm:pl-[40px] xmd:pl-[100px] text-[48px] font-[600] font-Sora leading-[1.1]">
+      <h1 className="pt-[50px] vsm:pt-[120px] pl-[20px] vsm:pl-[40px] xmd:pl-[100px] text-[48px] font-[600] font-Poppins leading-[1.1]">
         Explore Our Features
       </h1>
       <div className="hidden xmd:block absolute right-0 top-[-170px] w-[40%] aspect-square">
@@ -80,7 +80,7 @@ const Features = () => {
                     <p className="text-[66.86px] italic font-bold leading-[1.1]">
                       0{i + 1}.
                     </p>
-                    <h1 className="mt-[10px] mb-[20px] text-[20px] font-bold font-Sora">
+                    <h1 className="mt-[10px] mb-[20px] text-[20px] font-bold font-Poppins">
                       {feature.title}
                     </h1>
                     <p className="text-[#FFFFFFB2] leading-[28px]">
@@ -94,7 +94,7 @@ const Features = () => {
                   <p className="text-[66.86px] italic font-bold leading-[1.1]">
                     0{i + 1}.
                   </p>
-                  <h1 className="mt-[10px] mb-[20px] text-[20px] font-bold font-Sora">
+                  <h1 className="mt-[10px] mb-[20px] text-[20px] font-bold font-Poppins">
                     {feature.title}
                   </h1>
                   <p className="text-[#FFFFFFB2] leading-[28px]">

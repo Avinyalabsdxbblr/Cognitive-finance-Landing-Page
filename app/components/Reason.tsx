@@ -8,7 +8,7 @@ const Reason = () => {
       id="reason"
       className="relative bg-[black] text-white py-[100px] grid place-items-center"
     >
-      <div className="relative z-[2] w-[90%] xl:w-[80%] min-h-[110vh] pt-[40px] md:pt-[100px] pb-[40px] bg-[#212121] flex flex-col justify-between">
+      <div className="relative z-[2] w-[90%] xl:w-[80%] min-h-[600px] pt-[40px] md:pt-[100px] pb-[40px] bg-[#212121] flex flex-col justify-between">
         <h1 className="mx-[5%] lg:mx-[10%] text-[36px] font-Poppins font-bold leading-[50px]">
           Why Choose <br />
           Cognitive Finance

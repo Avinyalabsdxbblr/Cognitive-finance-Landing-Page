@@ -6,15 +6,25 @@ const About = () => {
   return (
     <div
       id="about"
-      className="mt-[150px] md:mt-[75vh] mb-[100px] vsm:mb-[25vh] relative w-full"
+      className="mt-[150px] md:mt-[0px] mb-[100px] vsm:mb-[25vh] relative w-full"
     >
-      <div>
-        <h1 className="text-[20px] font-[600] font-Sora text-center text-[#36394A]">
+      <div className="relative w-[90%] xmd:w-[75%] aspect-video mx-auto mt-[-280px]">
+        <Image
+          fill
+          className="object-contain"
+          src="/heroImg.png"
+          alt="Chat"
+          priority
+        />
+      </div>
+
+      <div className="mt-[100px]">
+        <h1 className="text-[20px] font-[600] font-Poppins text-center text-[#36394A]">
           Multichain support
         </h1>
 
-        <div className="hidden lg:block mt-[30px] space-y-[10px]">
-          <div className="flex justify-center items-center gap-[20px]">
+        <div className="hidden lg:block mt-[30px] space-y-[20px]">
+          <div className="flex justify-center items-center gap-[30px]">
             <Image
               className="object-contain"
               width={160}
@@ -51,7 +61,7 @@ const About = () => {
               alt="brand"
             />
           </div>
-          <div className="flex justify-center items-center gap-[20px]">
+          <div className="flex justify-center items-center gap-[30px]">
             <Image
               className="object-contain"
               width={160}
@@ -83,7 +93,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="mt-[20px] px-[20px] w-fit mx-auto grid lg:hidden justify-center grid-cols-3 gap-x-[20px] gap-y-[10px]">
+        <div className="mt-[20px] px-[20px] w-fit mx-auto grid lg:hidden justify-center grid-cols-3 gap-x-[20px] gap-y-[20px]">
           <Image
             className="object-contain"
             width={160}
