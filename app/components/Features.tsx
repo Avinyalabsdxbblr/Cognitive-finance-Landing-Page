@@ -28,7 +28,7 @@ const Features = () => {
   return (
     <div
       id="features"
-      className="relative w-full min-h-screen pb-[60px] bg-[#000000] text-white"
+      className="relative w-full min-screen vsm:min-h-[882px] pb-[60px] bg-[#000000] text-white"
     >
       <h1 className="pt-[50px] vsm:pt-[120px] pl-[20px] vsm:pl-[40px] xmd:pl-[100px] text-[48px] font-[600] font-Poppins leading-[1.1]">
         Explore Our Features
@@ -37,7 +37,7 @@ const Features = () => {
         <Image fill className="object-contain" src="/lappy.png" alt="laptop" />
       </div>
 
-      <div className="mt-[50px] vsm:mt-[100px] relative w-full">
+      <div className="mt-[50px] xmd:mt-[220px] relative w-full">
         <div className="absolute left-0 w-[300px] aspect-square">
           <Image className="" fill src="/gradient.png" alt="gradient" />
         </div>

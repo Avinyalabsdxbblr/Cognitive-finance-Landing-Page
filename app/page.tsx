@@ -9,7 +9,7 @@ import Reason from "./components/Reason";
 
 export default function Home() {
   return (
-    <div>
+    <div className="w-full overflow-x-hidden">
       <Hero />
       <About />
       <Features />
