@@ -6,9 +6,9 @@ const About = () => {
   return (
     <div
       id="about"
-      className="mt-[100px] md:mt-[0px] mb-[100px] vsm:mb-[25vh] relative w-full"
+      className="mt-[100px] md:mt-[0px] mb-[100px] vsm:mb-[250px] relative w-full"
     >
-      <div className="relative w-[90%] xmd:w-[75%] aspect-video mx-auto mt-[-280px]">
+      <div className="relative w-[90%] xmd:w-[75%] 2xl:w-[70%] aspect-video mx-auto mt-[-250px] vsm:mt-[-280px]">
         <Image
           fill
           className="object-contain"
@@ -18,7 +18,7 @@ const About = () => {
         />
       </div>
 
-      <div className="mt-[100px]">
+      <div className="mt-[100px] vsm:mt-[200px]">
         <h1 className="text-[20px] font-[600] font-Poppins text-center text-[#36394A]">
           Multichain support
         </h1>
@@ -159,7 +159,7 @@ const About = () => {
           />
         </div>
 
-        <div className="mt-[60px] px-[20px] vsm:px-[40px] flex flex-col-reverse lg:flex-row items-center justify-center gap-[50px] lg:gap-[100px]">
+        <div className="mt-[100px] vsm:mt-[200px] px-[20px] vsm:px-[40px] flex flex-col-reverse lg:flex-row items-center justify-center gap-[50px] lg:gap-[100px]">
           <div className="relative max-w-[564px] w-full lg:w-[40%] h-[250px] md:h-[300px] rounded-[12px]">
             <div className="hidden vsm:block relative w-full h-full bg-[#2CAEE9] rounded-[12px] px-[40px] py-[20px]">
               <ul className="text-[13px] text-white leading-[20px]">

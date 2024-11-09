@@ -7,7 +7,7 @@ const FAQs = () => {
   const [isOpen, setIsOpen] = useState<null | number>(null);
 
   return (
-    <div className="mt-[50px] mb-[50px] sm:mb-[100px]">
+    <div className="mt-[100px] vsm:mt-[200px] mb-[50px] sm:mb-[100px]">
       <h1 className="text-center text-[36px] font-[500] font-Poppins text-[#101828]">
         FAQs
       </h1>

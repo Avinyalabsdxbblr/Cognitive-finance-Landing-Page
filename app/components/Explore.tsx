@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Explore = () => {
   return (
-    <div className="mt-[75px] mb-[140px]">
+    <div className="mt-[100px] vsm:mt-[200px] mb-[100px] vsm:mb-[200px]">
       <h1 className="px-[20px] text-[30px] vsm:text-[36px] leading-[1.2] font-[600] text-center font-Poppins">
         Supercharge Your On-Chain Experience
       </h1>
@@ -27,7 +27,7 @@ const Explore = () => {
         <Label />
       </div>
 
-      <div className="px-[20px] vsm:px-[50px] mt-[70px] vsm:mt-[100px] flex flex-col lg:flex-row items-center justify-center gap-[50px] lg:gap-[100px]">
+      <div className="px-[20px] vsm:px-[50px] mt-[100px] vsm:mt-[200px] flex flex-col lg:flex-row items-center justify-center gap-[50px] lg:gap-[100px]">
         <div>
           <h1 className="text-[30px] vsm:text-[36px] font-Poppins font-[600] leading-[1.2] vsm:leading-[60px] text-[#000000]">
             Ensuring Security & <br className="hidden sm:block" /> Compliance
