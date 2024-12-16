@@ -5,20 +5,20 @@ import React, { useState } from "react";
 
 const features = [
   {
-    title: "Seamless Blockchain Interactions",
-    text: "Leverage the power of artificial intelligence to craft personalized investment strategies. Our advanced algorithms analyze market trends and user preferences to maximize your returns with minimal risk",
+    title: "Intent-Centric Interaction",
+    text: "Leverage AI with intent to craft personalized investment strategies, analyzing market trends and your preferences to maximize returns with minimal risk",
   },
   {
-    title: "AI-Driven Investment Strategies",
-    text: "Leverage the power of artificial intelligence to craft personalized investment strategies. Our advanced algorithms analyze market trends and user preferences to maximize your returns with minimal risk",
+    title: "AI-Powered Investment Strategies",
+    text: "Use AI to create personalized strategies that analyze market trends and preferences, maximizing returns with minimal risk",
   },
   {
-    title: "Real-Time Financial Insights",
-    text: "Leverage the power of artificial intelligence to craft personalized investment strategies. Our advanced algorithms analyze market trends and user preferences to maximize your returns with minimal risk",
+    title: "AI-Powered DeFi Insights",
+    text: "Harness AI to craft personalized investment strategies, analyzing blockchain trends and your preferences to crush returns with minimal risk",
   },
   {
-    title: "Seamless Blockchain Interactions",
-    text: "Leverage the power of artificial intelligence to craft personalized investment strategies. Our advanced algorithms analyze market trends and user preferences to maximize your returns with minimal risk",
+    title: "Permissionless on chain interactions",
+    text: "Leverage AI to customize strategies, analyzing trends and preferences to maximize returns with minimal risk, all in a permissionless environment",
   },
 ];
 
@@ -65,7 +65,7 @@ const Features = () => {
                 isOpen != i
                   ? "w-full md:w-[25%] xmd:w-[120px]"
                   : "w-full xmd:w-[360px]"
-              } h-fit md:h-[450px] xl:h-[400px] bg-[#121212] rounded-[8px] duration-300 cursor-pointer overflow-hidden`}
+              } h-fit md:h-[450px] xl:h-[420px] bg-[#121212] rounded-[8px] duration-300 cursor-pointer overflow-hidden`}
             >
               <div className="hidden md:block">
                 {isOpen != i ? (

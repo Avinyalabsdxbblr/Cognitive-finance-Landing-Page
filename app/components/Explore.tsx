@@ -28,16 +28,15 @@ const Explore = () => {
       </div>
 
       <div className="px-[20px] vsm:px-[50px] mt-[100px] vsm:mt-[200px] flex flex-col lg:flex-row items-center justify-center gap-[50px] lg:gap-[100px]">
-        <div>
+        <div className="lg:w-[40%]">
           <h1 className="text-[30px] vsm:text-[36px] font-Poppins font-[600] leading-[1.2] vsm:leading-[60px] text-[#000000]">
-            Ensuring Security & <br className="hidden sm:block" /> Compliance
+            Prioritizing Security & <br className="hidden sm:block" />{" "}
+            Compliance
           </h1>
           <p className="mt-[20px] mb-[20px] vsm:mb-[30px] vsm:text-[20px] text-[#000000]">
-            Cognitive Finance is dedicated to maintaining top-notch{" "}
-            <br className="hidden vsm:block" /> security and regulatory
-            compliance. Our smart contracts <br className="hidden vsm:block" />{" "}
-            and operational procedures are thoroughly audited to{" "}
-            <br className="hidden vsm:block" /> provide a secure and reliable
+            Cognitive Finance is committed to upholding the highest standards of
+            security and regulatory compliance. Our smart contracts and
+            processes undergo rigorous audits to ensure a secure and dependable
             platform for our users.
           </p>
           <Button />
@@ -91,16 +90,13 @@ const Explore = () => {
         </div>
 
         <h1 className="relative text-[30px] vsm:text-[36px] leading-[45.36px] font-Poppins text-center font-[600] text-[#000000]">
-          Get Started <br className="hidden vsm:block" />
-          Join Cognitive Finance Today
-        </h1>
-        <p className="my-[25px] vsm:my-[50px] w-full vsm:w-[80%] px-[20px] vsm:px-0 mx-auto text-center text-[20px] text-[#000000]">
-          Your Journey Begins Here - Dive into the future of decentralized
-          finance with Cognitive Finance. Register now to revolutionize the way
-          you save and earn. Leveraging our advanced multi-chain, multi-token
-          approach, the opportunities for financial growth and empowerment are
-          limitless. Embark on your path to financial freedom and empowerment
+          Start Your Journey <br className="hidden vsm:block" />
           with Cognitive Finance
+        </h1>
+        <p className="my-[25px] vsm:my-[50px] w-full vsm:w-[70%] lg:w-[60%] px-[20px] vsm:px-0 mx-auto text-center text-[20px] text-[#000000]">
+          Explore the future of decentralized finance on our intent-centric
+          platform. Sign up now to access unlimited growth opportunities with on
+          chain, multi-token approach, and build your path to financial freedom.
         </p>
         <Button />
       </div>

@@ -10,8 +10,8 @@ const Footer = () => {
         <div>
           <Image src="/logo.svg" width={48} height={44} alt="logo" />
           <p className="mt-[20px] mb-[40px]">
-            Make your data invisible by generating <br /> unlimited identities.
-            The next-level in <br /> privacy protection for online and travel.
+            Explore the future of decentralized <br /> finance on our
+            intent-centric platform
           </p>
           <div className="flex items-center gap-[20px] text-[20px]">
             <Yt />
@@ -29,11 +29,18 @@ const Footer = () => {
             <Link href="">FAQ</Link>
           </div>
           <div className="links">
-            <h1>Solutions</h1>
-            <Link href="">Personal information removal</Link>
-            <Link href="">Cloaking alias profiles</Link>
-            <Link href="">Cloaking alias profiles</Link>
+            <h1>Resources</h1>
+            <Link href="">Docs</Link>
+            <Link href="">LinkTree</Link>
+            <Link href="">Medium</Link>
+            <Link href="">Media Kit</Link>
           </div>
+          {/* <div className="links">
+            <h1>Contact</h1>
+            <Link href="">Institutions</Link>
+            <Link href="">Partnerships</Link>
+            <Link href="">General Inquiry</Link>
+          </div> */}
           <div className="links">
             <h1>Legal</h1>
             <Link href="">Terms of Service</Link>

@@ -28,10 +28,10 @@ const Contact = () => {
             Access to all content
           </p>
         </span>
-        <span className="flex items-center gap-[5px]">
+        {/* <span className="flex items-center gap-[5px]">
           <Mark className="text-[#047857]" />
           <p className="2xl:text-[17.9px] text-[#4F4F4F]">Expert Support</p>
-        </span>
+        </span> */}
       </div>
 
       <div className="relative z-[2] mx-auto border border-[#D4D4D8] w-[90%] sm:w-[386px] h-[55px] flex rounded-[10px] overflow-hidden">

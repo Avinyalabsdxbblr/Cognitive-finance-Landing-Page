@@ -65,44 +65,32 @@ export default FAQs;
 const FAQ = [
   {
     question: `What is Cognitive Finance?`,
-    answer: `Cognitive Finance is an innovative platform transforming
-              cryptocurrency savings by utilizing a multi-chain, multi-token
-              strategy. This approach allows you to access competitive yields
-              across a wide array of digital assets and blockchain networks`,
+    answer: `Cognitive Finance is an innovative, user-centric platform that empowers you to take control of your cryptocurrency savings. With a onchain, multi-token strategy, it allows you to set your preferences and simplify complex processes, providing competitive yields across various digital assets and blockchain networks through a more human-centric interface.`,
   },
   {
     question: `How does Cognitive Finance work?`,
-    answer: `Cognitive Finance is an innovative platform transforming
-              cryptocurrency savings by utilizing a multi-chain, multi-token
-              strategy. This approach allows you to access competitive yields
-              across a wide array of digital assets and blockchain networks`,
+    answer: `Cognitive Finance is an intent-centric platform that puts you in control of your cryptocurrency savings. Its intent engine powers multiple solvers, efficiently managing settlements across various chains to optimize your financial strategy.`,
   },
   {
     question: `Is Cognitive Finance secure?`,
-    answer: `Cognitive Finance is an innovative platform transforming
-              cryptocurrency savings by utilizing a multi-chain, multi-token
-              strategy. This approach allows you to access competitive yields
-              across a wide array of digital assets and blockchain networks`,
+    answer: `Yes, Cognitive Finance prioritizes security. The platform follows industry-leading practices, including rigorous audits of smart contracts and operational procedures, ensuring a secure environment for managing your cryptocurrency. With a focus on regulatory compliance and robust security measures, Cognitive Finance provides a reliable and safe space for your digital assets.`,
   },
+  // {
+  //   question: `Why does Cognitive Finance adopt a multi-chain approach?`,
+  //   answer: `Cognitive Finance is an innovative platform transforming
+  //             cryptocurrency savings by utilizing a multi-chain, multi-token
+  //             strategy. This approach allows you to access competitive yields
+  //             across a wide array of digital assets and blockchain networks`,
+  // },
   {
-    question: `Why does Cognitive Finance adopt a multi-chain approach?`,
-    answer: `Cognitive Finance is an innovative platform transforming
-              cryptocurrency savings by utilizing a multi-chain, multi-token
-              strategy. This approach allows you to access competitive yields
-              across a wide array of digital assets and blockchain networks`,
+    question: `Can I Create an AI Portfolio on Cognitive Finance?`,
+    answer: `Cognitive Finance supports a broad selection of cryptocurrencies via its multi-chain, multi-token strategy. While it enables you to save and manage a variety of digital assets, the available tokens and chains may differ. The platform ensures flexibility by offering competitive yields on supported cryptocurrencies, allowing for diverse portfolio growth.`,
   },
-  {
-    question: `Can I save any cryptocurrency on Cognitive Finance?`,
-    answer: `Cognitive Finance is an innovative platform transforming
-              cryptocurrency savings by utilizing a multi-chain, multi-token
-              strategy. This approach allows you to access competitive yields
-              across a wide array of digital assets and blockchain networks`,
-  },
-  {
-    question: `How do I select the best saving plan for me?`,
-    answer: `Cognitive Finance is an innovative platform transforming
-              cryptocurrency savings by utilizing a multi-chain, multi-token
-              strategy. This approach allows you to access competitive yields
-              across a wide array of digital assets and blockchain networks`,
-  },
+  // {
+  //   question: `How do I select the best saving plan for me?`,
+  //   answer: `Cognitive Finance is an innovative platform transforming
+  //             cryptocurrency savings by utilizing a multi-chain, multi-token
+  //             strategy. This approach allows you to access competitive yields
+  //             across a wide array of digital assets and blockchain networks`,
+  // },
 ];

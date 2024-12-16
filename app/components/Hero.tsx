@@ -13,12 +13,16 @@ const Hero = () => {
           Cognitive Finance
         </h1>
 
-        <p className="px-[20px] mt-[30px] mb-[60px] text-[19.84px] text-black text-center">
+        {/* <p className="px-[20px] mt-[30px] mb-[60px] text-[19.84px] text-black text-center">
           "Hi, I can assist you with a variety of topics related to Web3{" "}
           <br className="hidden md:block" />
           technology, cryptocurrencies, blockchain, NFTs, decentralized finance{" "}
           <br className="hidden md:block" />
           (DeFi), and more.
+        </p> */}
+        <p className="px-[20px] mt-[30px] mb-[60px] text-[19.84px] text-black text-center">
+          "Cognitive - Your Onchain Advisor: Chat, plan, transact, and simplify
+          crypto effortlessly."
         </p>
 
         <div className="mx-auto w-fit block">

@@ -16,13 +16,17 @@ const Reason = () => {
 
         <div className="mt-[50px] md-mt-0 mx-[5%] lg:mx-[10%] flex flex-col gap-[30px] md:gap-0 md:flex-row justify-between items-center">
           <div className="bg-[#141414] w-full md:w-[60%] rounded-[12px] h-[225px] p-[30px] flex flex-col justify-center">
-            <h1 className="mb-[10px] 2xl:text-[20px] text-left">
+            {/* <h1 className="mb-[10px] 2xl:text-[20px] text-left">
               Seasoned Team
-            </h1>
+            </h1> */}
             <p className="2xl:text-[20px] text-[#FFFFFFB2]">
-              At Cognitive Finance, our founding team has a proven track record
-              of scaling platforms into multimillion-dollar businesses in the
-              past.
+              Unlock the future of decentralized finance with our intent-centric
+              platform. Experience seamless multi-chain, multi-token
+              opportunities, top-tier security, and personalized strategies
+              designed to empower your financial growth.
+            </p>
+            <p className="mt-[10px] 2xl:text-[20px] text-[#FFFFFFB2]">
+              Interact with COGNITIVE and build your transactions using intents.
             </p>
           </div>
 
