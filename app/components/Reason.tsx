@@ -23,7 +23,7 @@ const Reason = () => {
       });
       reasonTL
         .from(".animate1", { y: 50, opacity: 0 })
-        .from(".animate2", { x: -50, opacity: 0, duration: 1, stagger: 0.3 });
+        .from(".animate2", { x: -30, opacity: 0, duration: 1, stagger: 0.3 });
     },
     { scope: reasonRef }
   );

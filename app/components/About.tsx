@@ -15,13 +15,14 @@ const About = () => {
   const aboutRef = useRef<any>();
   useGSAP(
     () => {
-      const aboutTL = gsap.timeline({
-        scrollTrigger: {
-          trigger: aboutRef.current,
-          start: "top 80%",
-        },
-      });
-      aboutTL.from(".animate1", { y: 50, opacity: 0 });
+      // const aboutTL = gsap.timeline({
+      //   delay: 4.5,
+      //   scrollTrigger: {
+      //     trigger: aboutRef.current,
+      //     start: "top 80%",
+      //   },
+      // });
+      gsap.from(".animate1", { y: 50, opacity: 0, delay: 4.6 });
     },
     { scope: aboutRef }
   );
@@ -36,8 +37,8 @@ const About = () => {
       });
       aboutTL
 
-        .from(".animate2", { x: -50, opacity: 0, duration: 1 })
-        .from(".animate3", { x: -50, opacity: 0, duration: 1 }, "-=0.5");
+        .from(".animate2", { x: -30, opacity: 0, duration: 1 })
+        .from(".animate3", { x: -30, opacity: 0, duration: 1 }, "-=0.5");
     },
     { scope: aboutRef }
   );

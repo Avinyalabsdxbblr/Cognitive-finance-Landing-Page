@@ -25,7 +25,7 @@ const FAQs = () => {
       faqTL
         .from(".animate1", { y: 20, opacity: 0 })
         .from(".animate2", { y: 20, opacity: 0 })
-        .from(".animate3", { x: -50, opacity: 0, duration: 1, stagger: 0.3 });
+        .from(".animate3", { x: -30, opacity: 0, duration: 1, stagger: 0.3 });
     },
     { scope: faqRef }
   );
