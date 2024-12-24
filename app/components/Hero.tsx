@@ -14,7 +14,7 @@ const Hero = () => {
   const heroRef = useRef<any>();
   useGSAP(
     () => {
-      const heroTL = gsap.timeline({});
+      const heroTL = gsap.timeline({ delay: 3.5 });
       heroTL
         .from(".animate1", {
           y: 40,

@@ -3,15 +3,42 @@
 import React, { useState } from "react";
 import { FiMinus, FiPlus } from "react-icons/fi";
 
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
+
 const FAQs = () => {
   const [isOpen, setIsOpen] = useState<null | number>(null);
 
+  const faqRef = useRef<any>();
+  useGSAP(
+    () => {
+      const faqTL = gsap.timeline({
+        scrollTrigger: {
+          trigger: faqRef.current,
+          start: "top 80%",
+        },
+      });
+      faqTL
+        .from(".animate1", { y: 20, opacity: 0 })
+        .from(".animate2", { y: 20, opacity: 0 })
+        .from(".animate3", { x: -50, opacity: 0, duration: 1, stagger: 0.3 });
+    },
+    { scope: faqRef }
+  );
+
   return (
-    <div className="mt-[100px] vsm:mt-[200px] mb-[50px] sm:mb-[100px]">
-      <h1 className="text-center text-[36px] font-[500] font-Poppins text-[#101828]">
+    <div
+      ref={faqRef}
+      className="mt-[100px] vsm:mt-[200px] mb-[50px] sm:mb-[100px]"
+    >
+      <h1 className="animate1 text-center text-[36px] font-[500] font-Poppins text-[#101828]">
         FAQs
       </h1>
-      <p className="px-[20px] mt-[10px] text-[20px] font-[500] text-center text-[#667085]">
+      <p className="animate2 px-[20px] mt-[10px] text-[20px] font-[500] text-center text-[#667085]">
         Can't find the answer you're looking for? Reach out to our{" "}
         <span className="underline">
           customer <br className="hidden md:block" />
@@ -26,7 +53,7 @@ const FAQs = () => {
             key={i}
             className={`${
               isOpen != i ? "border border-[#EAEAEA]" : ""
-            } w-[90%] md:w-[80%] xmd:w-[55%] px-[15px] rounded-[8px]`}
+            } animate3 w-[90%] md:w-[80%] xmd:w-[55%] px-[15px] rounded-[8px]`}
           >
             <button
               onClick={() => {
@@ -75,22 +102,8 @@ const FAQ = [
     question: `Is Cognitive Finance secure?`,
     answer: `Yes, Cognitive Finance prioritizes security. The platform follows industry-leading practices, including rigorous audits of smart contracts and operational procedures, ensuring a secure environment for managing your cryptocurrency. With a focus on regulatory compliance and robust security measures, Cognitive Finance provides a reliable and safe space for your digital assets.`,
   },
-  // {
-  //   question: `Why does Cognitive Finance adopt a multi-chain approach?`,
-  //   answer: `Cognitive Finance is an innovative platform transforming
-  //             cryptocurrency savings by utilizing a multi-chain, multi-token
-  //             strategy. This approach allows you to access competitive yields
-  //             across a wide array of digital assets and blockchain networks`,
-  // },
   {
     question: `Can I Create an AI Portfolio on Cognitive Finance?`,
     answer: `Cognitive Finance supports a broad selection of cryptocurrencies via its multi-chain, multi-token strategy. While it enables you to save and manage a variety of digital assets, the available tokens and chains may differ. The platform ensures flexibility by offering competitive yields on supported cryptocurrencies, allowing for diverse portfolio growth.`,
   },
-  // {
-  //   question: `How do I select the best saving plan for me?`,
-  //   answer: `Cognitive Finance is an innovative platform transforming
-  //             cryptocurrency savings by utilizing a multi-chain, multi-token
-  //             strategy. This approach allows you to access competitive yields
-  //             across a wide array of digital assets and blockchain networks`,
-  // },
 ];

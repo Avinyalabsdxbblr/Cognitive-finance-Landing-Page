@@ -18,7 +18,7 @@ const About = () => {
       const aboutTL = gsap.timeline({
         scrollTrigger: {
           trigger: aboutRef.current,
-          start: "top 90%",
+          start: "top 80%",
         },
       });
       aboutTL.from(".animate1", { y: 50, opacity: 0 });
@@ -31,7 +31,7 @@ const About = () => {
       const aboutTL = gsap.timeline({
         scrollTrigger: {
           trigger: ".animate-wrap",
-          start: "top 90%",
+          start: "top 80%",
         },
       });
       aboutTL

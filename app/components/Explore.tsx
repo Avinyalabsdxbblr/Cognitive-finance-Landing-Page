@@ -18,7 +18,7 @@ const Explore = () => {
       const exploreTL = gsap.timeline({
         scrollTrigger: {
           trigger: exploreRef.current,
-          start: "top 90%",
+          start: "top 80%",
         },
       });
       exploreTL.from(".animate1", {
@@ -31,7 +31,7 @@ const Explore = () => {
       const anim2TL = gsap.timeline({
         scrollTrigger: {
           trigger: ".animate-wrap2",
-          start: "top 90%",
+          start: "top 80%",
         },
       });
       anim2TL.from(".animate2", {
@@ -44,7 +44,7 @@ const Explore = () => {
       const anim3TL = gsap.timeline({
         scrollTrigger: {
           trigger: ".animate-wrap3",
-          start: "top 90%",
+          start: "top 80%",
         },
       });
       anim3TL.from(".animate3", {

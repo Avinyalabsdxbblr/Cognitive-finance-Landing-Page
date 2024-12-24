@@ -5,6 +5,7 @@ import FAQs from "./components/FAQs";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
+import Preloader from "./components/Preloader";
 import Reason from "./components/Reason";
 
 export default function Home() {
@@ -18,6 +19,8 @@ export default function Home() {
       <FAQs />
       <Contact />
       <Footer />
+
+      <Preloader />
     </div>
   );
 }
