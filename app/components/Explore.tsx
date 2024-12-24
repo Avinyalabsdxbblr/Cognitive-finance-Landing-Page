@@ -71,7 +71,7 @@ const Explore = () => {
               priority
               className="object-cover"
               fill
-              src="/gptImg2.png"
+              src="/chatImg.png"
               alt="code"
             />
           </div>

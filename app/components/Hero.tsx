@@ -29,11 +29,9 @@ const Hero = () => {
           <Button />
         </div>
       </div>
-
       <div className="absolute left-0 top-0 h-full w-full">
         <Image fill className="object-cover" src="/heroBg.svg" alt="gradient" />
       </div>
-
       {/* <div className="absolute w-[90%] xmd:w-[75%] aspect-video left-1/2 -translate-x-1/2 top-[68%]">
         <Image
           fill

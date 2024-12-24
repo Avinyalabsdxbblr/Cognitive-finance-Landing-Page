@@ -12,17 +12,27 @@ const About = () => {
         <Image
           fill
           className="object-contain"
-          src="/heroImg.png"
+          src="/chatImg.png"
           alt="Chat"
           priority
         />
       </div>
 
-      <div className="mt-[100px] vsm:mt-[200px]">
+      <div className="mt-[100px] vsm:mt-[150px]">
         <h1 className="text-[20px] font-[600] font-Poppins text-center text-[#36394A]">
           Multichain support
         </h1>
+        <div className="mt-[30px] flex flex-wrap justify-center">
+          <Image
+            className="object-contain"
+            width={160}
+            height={56}
+            src="/polyhedra.svg"
+            alt="brand"
+          />
+        </div>
 
+        {/* 
         <div className="hidden lg:block mt-[30px] space-y-[20px]">
           <div className="flex justify-center items-center gap-[30px]">
             <Image
@@ -157,9 +167,9 @@ const About = () => {
             src="/brand.svg"
             alt="brand"
           />
-        </div>
+        </div> */}
 
-        <div className="mt-[100px] vsm:mt-[200px] px-[20px] vsm:px-[40px] flex flex-col-reverse lg:flex-row items-center justify-center gap-[50px] lg:gap-[100px]">
+        <div className="mt-[100px] vsm:mt-[150px] px-[20px] vsm:px-[40px] flex flex-col-reverse lg:flex-row items-center justify-center gap-[50px] lg:gap-[100px]">
           <div className="relative max-w-[564px] w-full lg:w-[40%] h-[250px] md:h-[300px] rounded-[12px]">
             <div className="hidden vsm:block relative w-full h-full bg-[#2CAEE9] rounded-[12px] px-[40px] py-[20px]">
               <ul className="text-[13px] text-white leading-[20px]">
@@ -190,23 +200,20 @@ const About = () => {
                 priority
                 className="object-contain vsm:object-cover"
                 fill
-                src="/gptImg.svg"
+                src="/chatImg.png"
                 alt="code"
               />
             </div>
           </div>
 
-          <div>
-            <h1 className="text-[30px] vsm:text-[36px] font-Poppins font-[600] leading-[1.3] lg:leading-[60px] text-[#000000]">
-              Supercharge your <br className="hidden lg:block" /> transactions
-              with lightning- <br className="hidden lg:block" />
-              fast speed using our AI- <br className="hidden lg:block" />
-              powered platform.
+          <div className="max-w-[45%]">
+            <h1 className="text-[24px] vsm:text-[30px] font-Poppins font-[600] leading-[1.4] text-[#000000]">
+              Experience lightning-fast, intent-centric transactions tailored to
+              your needs, powered by our AI platform that simplifies and
+              personalizes your crypto journey.
             </h1>
             <p className="mt-[20px] mb-[30px] text-[20px] text-[#000000]">
-              Start transforming your on-chain activities effortlessly in{" "}
-              <br className="hidden lg:block" /> just minutes with Cognitive
-              Finance.
+              Simplify your on-chain activities with Cognitive Finance.
             </p>
             <Button />
           </div>
