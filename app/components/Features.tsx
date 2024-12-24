@@ -3,34 +3,39 @@
 import Image from "next/image";
 import React, { useState } from "react";
 
-const features = [
-  {
-    title: "Intent-Centric Interaction",
-    text: "Leverage AI with intent to craft personalized investment strategies, analyzing market trends and your preferences to maximize returns with minimal risk",
-  },
-  {
-    title: "AI-Powered Investment Strategies",
-    text: "Use AI to create personalized strategies that analyze market trends and preferences, maximizing returns with minimal risk",
-  },
-  {
-    title: "AI-Powered DeFi Insights",
-    text: "Harness AI to craft personalized investment strategies, analyzing blockchain trends and your preferences to crush returns with minimal risk",
-  },
-  {
-    title: "Permissionless on chain interactions",
-    text: "Leverage AI to customize strategies, analyzing trends and preferences to maximize returns with minimal risk, all in a permissionless environment",
-  },
-];
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Features = () => {
   const [isOpen, setIsOpen] = useState(0);
 
+  const featuresRef = useRef<any>();
+  useGSAP(
+    () => {
+      const featuresTL = gsap.timeline({
+        scrollTrigger: {
+          trigger: featuresRef.current,
+          start: "top 80%",
+        },
+      });
+      featuresTL
+        .from(".animate1", { y: 50, opacity: 0 })
+        .to(".animate2", { x: 0, opacity: 1, stagger: 0.2 });
+    },
+    { scope: featuresRef }
+  );
+
   return (
     <div
       id="features"
+      ref={featuresRef}
       className="relative w-full min-screen vsm:min-h-[882px] pb-[60px] bg-[#000000] text-white"
     >
-      <h1 className="pt-[50px] vsm:pt-[120px] pl-[20px] vsm:pl-[40px] xmd:pl-[100px] text-[48px] font-[600] font-Poppins leading-[1.1]">
+      <h1 className="animate1 pt-[50px] vsm:pt-[120px] pl-[20px] vsm:pl-[40px] xmd:pl-[100px] text-[48px] font-[600] font-Poppins leading-[1.1]">
         Explore Our Features
       </h1>
       {/* <div className="hidden xmd:block absolute right-0 top-[-170px] w-[40%] aspect-square">
@@ -56,16 +61,16 @@ const Features = () => {
           alt="star"
         />
 
-        <div className="px-[20px] vsm:px-[30px] relative ml-0 xmd:ml-[200px] lg:ml-[400px] flex flex-col md:flex-row gap-[20px]">
+        <div className=" px-[20px] vsm:px-[30px] relative ml-0 xmd:ml-[200px] lg:ml-[400px] flex flex-col md:flex-row gap-[20px]">
           {features.map((feature, i) => (
             <div
               key={i}
               onClick={() => setIsOpen(i)}
-              className={`${
+              className={`animate2 -translate-x-[50px] opacity-0 ${
                 isOpen != i
                   ? "w-full md:w-[25%] xmd:w-[120px]"
                   : "w-full xmd:w-[360px]"
-              } h-fit md:h-[450px] xl:h-[420px] bg-[#121212] rounded-[8px] duration-300 cursor-pointer overflow-hidden`}
+              }  h-fit md:h-[450px] xl:h-[420px] bg-[#121212] rounded-[8px] duration-300 cursor-pointer overflow-hidden`}
             >
               <div className="hidden md:block">
                 {isOpen != i ? (
@@ -111,3 +116,22 @@ const Features = () => {
 };
 
 export default Features;
+
+const features = [
+  {
+    title: "Intent-Centric Interaction",
+    text: "Leverage AI with intent to craft personalized investment strategies, analyzing market trends and your preferences to maximize returns with minimal risk",
+  },
+  {
+    title: "AI-Powered Investment Strategies",
+    text: "Use AI to create personalized strategies that analyze market trends and preferences, maximizing returns with minimal risk",
+  },
+  {
+    title: "AI-Powered DeFi Insights",
+    text: "Harness AI to craft personalized investment strategies, analyzing blockchain trends and your preferences to crush returns with minimal risk",
+  },
+  {
+    title: "Permissionless on chain interactions",
+    text: "Leverage AI to customize strategies, analyzing trends and preferences to maximize returns with minimal risk, all in a permissionless environment",
+  },
+];

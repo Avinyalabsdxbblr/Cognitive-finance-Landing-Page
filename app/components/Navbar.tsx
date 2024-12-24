@@ -20,7 +20,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="relative z-[5] w-full px-[30px] py-[20px] flex justify-between xmd:justify-center xmd:gap-[100px] items-center">
+    <nav className="relative z-[5] w-full px-[30px] py-[20px] flex justify-between xmd:justify-center xmd:gap-[100px] items-center">
       <Link className="relative z-[6]" href="/">
         <Image width={48} height={44} src="/logo.svg" alt="logo" />
       </Link>
@@ -50,7 +50,7 @@ const Navbar = () => {
       </button>
 
       <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} />
-    </div>
+    </nav>
   );
 };
 
