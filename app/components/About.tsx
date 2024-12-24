@@ -206,7 +206,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="max-w-[45%]">
+          <div className="w-full lg:max-w-[45%]">
             <h1 className="text-[24px] vsm:text-[30px] font-Poppins font-[600] leading-[1.4] text-[#000000]">
               Experience lightning-fast, intent-centric transactions tailored to
               your needs, powered by our AI platform that simplifies and

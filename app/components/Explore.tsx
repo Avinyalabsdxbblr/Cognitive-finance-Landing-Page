@@ -89,7 +89,7 @@ const Explore = () => {
           <Image fill className="object-contain" src="/dots.png" alt="dot" />
         </div>
 
-        <h1 className="relative text-[30px] vsm:text-[36px] leading-[45.36px] font-Poppins text-center font-[600] text-[#000000]">
+        <h1 className="relative px-[20px] text-[30px] vsm:text-[36px] leading-[45.36px] font-Poppins text-center font-[600] text-[#000000]">
           Start Your Journey <br className="hidden vsm:block" />
           with Cognitive Finance
         </h1>
