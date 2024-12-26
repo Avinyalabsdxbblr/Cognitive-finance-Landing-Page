@@ -66,22 +66,16 @@ const Explore = () => {
         Supercharge Your On-Chain Experience
       </h1>
       <div className="animate1 hidden lg:grid mt-[20px] w-fit mx-auto grid-cols-3 gap-x-[10px] gap-y-[25px] justify-center">
-        <Label />
-        <Label />
-        <Label />
-        <Label />
-        <Label />
-        <Label />
-        <Label />
-        <Label />
-        <Label />
+        {items.map((text) => (
+          <Label text={text} />
+        ))}
       </div>
-
-      <div className="animate1 lg:hidden mt-[20px] w-fit mx-auto grid grid-cols-1 gap-x-[10px] gap-y-[10px] vsm:gap-y-[20px] md:gap-y-[25px] justify-center">
-        <Label />
-        <Label />
-        <Label />
-        <Label />
+      <div className="animate1 lg:hidden mt-[20px] w-full flex flex-col items-center gap-y-[10px] vsm:gap-y-[20px] md:gap-y-[25px] justify-center">
+        {items
+          .filter((item, i) => i < 5)
+          .map((text) => (
+            <Label text={text} />
+          ))}
       </div>
 
       <div className="animate-wrap2 px-[20px] vsm:px-[50px] mt-[100px] vsm:mt-[200px] flex flex-col lg:flex-row items-center justify-center gap-[50px] lg:gap-[100px]">
@@ -165,10 +159,22 @@ const Explore = () => {
 
 export default Explore;
 
-const Label = () => {
+const Label = ({ text }: { text: string }) => {
   return (
-    <div className="w-fit px-[14px] py-[4px] bg-[#6A44FF1F] border border-[#6A44FF] rounded-[39px] font-[500] text-[#6943FF]">
-      Convert 30 ETH to BUSD on Ethereum
+    <div className="w-[70%] md:w-[50%] lg:w-[100%] px-[14px] py-[4px] grid place-items-center bg-[#6A44FF1F] border border-[#6A44FF] rounded-[39px] font-[500] text-[#6943FF]">
+      <p className="text-center">{text}</p>
     </div>
   );
 };
+
+const items = [
+  "Convert 10 Eth to BTC",
+  "Convert 500 USDT to XRP",
+  "Convert 5 ETH to USDT",
+  "Convert 10 Eth to USDC",
+  "Convert 2 BTC to ETH",
+  "Convert 1,000 USDC to USDT",
+  "Convert 20 XRP to ADA",
+  "Convert 0.5 BTC to BNB",
+  "Convert 100 ADA to SOL",
+];
