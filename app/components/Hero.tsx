@@ -40,8 +40,8 @@ const Hero = () => {
         </h1>
 
         <p className="animate1 px-[20px] mt-[30px] mb-[60px] text-[19.84px] text-black text-center">
-          "Cognitive - Your Onchain Advisor: Chat, plan, transact, and simplify
-          crypto effortlessly."
+          Cognitive - Your Onchain Advisor: Chat, plan, transact, and simplify
+          crypto effortlessly.
         </p>
 
         <div className="animate1 mx-auto w-fit block">
