@@ -21,21 +21,21 @@ const About = () => {
   //   { scope: aboutRef }
   // );
 
-  useGSAP(
-    () => {
-      const aboutTL = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".animate-wrap",
-          start: "top 80%",
-        },
-      });
-      aboutTL
+  // useGSAP(
+  //   () => {
+  //     const aboutTL = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: ".animate-wrap",
+  //         start: "top 80%",
+  //       },
+  //     });
+  //     aboutTL
 
-        .from(".animate2", { x: -30, opacity: 0, duration: 1 })
-        .from(".animate3", { x: -30, opacity: 0, duration: 1 }, "-=0.5");
-    },
-    { scope: aboutRef }
-  );
+  //       .from(".animate2", { x: -30, opacity: 0, duration: 1 })
+  //       .from(".animate3", { x: -30, opacity: 0, duration: 1 }, "-=0.5");
+  //   },
+  //   { scope: aboutRef }
+  // );
 
   return (
     <div
