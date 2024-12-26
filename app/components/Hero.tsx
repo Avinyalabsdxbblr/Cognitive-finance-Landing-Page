@@ -12,20 +12,20 @@ gsap.registerPlugin(useGSAP);
 
 const Hero = () => {
   const heroRef = useRef<any>();
-  useGSAP(
-    () => {
-      const heroTL = gsap.timeline({ delay: 3.5 });
-      heroTL
-        .from(".animate1", {
-          y: 40,
-          opacity: 0,
-          stagger: 0.3,
-          duration: 1,
-        })
-        .from("nav", { opacity: 0 }, "-=0.5");
-    },
-    { scope: heroRef }
-  );
+  // useGSAP(
+  //   () => {
+  //     const heroTL = gsap.timeline({ delay: 3.5 });
+  //     heroTL
+  //       .from(".animate1", {
+  //         y: 40,
+  //         opacity: 0,
+  //         stagger: 0.3,
+  //         duration: 1,
+  //       })
+  //       .from("nav", { opacity: 0 }, "-=0.5");
+  //   },
+  //   { scope: heroRef }
+  // );
 
   return (
     <div

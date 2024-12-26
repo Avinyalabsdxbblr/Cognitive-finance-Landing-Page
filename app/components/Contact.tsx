@@ -13,23 +13,23 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Contact = () => {
   const contactRef = useRef<any>();
-  useGSAP(
-    () => {
-      const contactTL = gsap.timeline({
-        scrollTrigger: {
-          trigger: contactRef.current,
-          start: "top 80%",
-        },
-      });
-      contactTL.from(".animate1", {
-        y: 20,
-        opacity: 0,
-        duration: 1,
-        stagger: 0.3,
-      });
-    },
-    { scope: contactRef }
-  );
+  // useGSAP(
+  //   () => {
+  //     const contactTL = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: contactRef.current,
+  //         start: "top 80%",
+  //       },
+  //     });
+  //     contactTL.from(".animate1", {
+  //       y: 20,
+  //       opacity: 0,
+  //       duration: 1,
+  //       stagger: 0.3,
+  //     });
+  //   },
+  //   { scope: contactRef }
+  // );
 
   return (
     <div

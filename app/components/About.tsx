@@ -13,19 +13,13 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const About = () => {
   const aboutRef = useRef<any>();
-  useGSAP(
-    () => {
-      // const aboutTL = gsap.timeline({
-      //   delay: 4.5,
-      //   scrollTrigger: {
-      //     trigger: aboutRef.current,
-      //     start: "top 80%",
-      //   },
-      // });
-      gsap.from(".animate1", { y: 50, opacity: 0, delay: 4.6 });
-    },
-    { scope: aboutRef }
-  );
+  // useGSAP(
+  //   () => {
+
+  //     gsap.from(".animate1", { y: 50, opacity: 0, delay: 4.6 });
+  //   },
+  //   { scope: aboutRef }
+  // );
 
   useGSAP(
     () => {
@@ -110,11 +104,10 @@ const About = () => {
             </div>
           </div>
 
-          <div className="animate3 w-full lg:max-w-[45%]">
-            <h1 className="text-[24px] vsm:text-[30px] font-Poppins font-[600] leading-[1.4] text-[#000000]">
-              Experience lightning-fast, intent-centric transactions tailored to
-              your needs, powered by our AI platform that simplifies and
-              personalizes your crypto journey.
+          <div className="animate3 w-full lg:max-w-[40%]">
+            <h1 className="text-[24px] vsm:text-[38px] font-Poppins font-[600] leading-[1.4] text-[#000000]">
+              Power up transactions <br className="hidden vsm:block" /> with our
+              ultra-fast, intent-driven interface!
             </h1>
             <p className="mt-[20px] mb-[30px] text-[20px] text-[#000000]">
               Simplify your on-chain activities with Cognitive Finance.

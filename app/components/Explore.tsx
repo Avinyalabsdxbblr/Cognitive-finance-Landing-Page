@@ -13,49 +13,49 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Explore = () => {
   const exploreRef = useRef<any>();
-  useGSAP(
-    () => {
-      const exploreTL = gsap.timeline({
-        scrollTrigger: {
-          trigger: exploreRef.current,
-          start: "top 80%",
-        },
-      });
-      exploreTL.from(".animate1", {
-        y: 20,
-        opacity: 0,
-        duration: 1,
-        stagger: 0.3,
-      });
+  // useGSAP(
+  //   () => {
+  //     const exploreTL = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: exploreRef.current,
+  //         start: "top 80%",
+  //       },
+  //     });
+  //     exploreTL.from(".animate1", {
+  //       y: 20,
+  //       opacity: 0,
+  //       duration: 1,
+  //       stagger: 0.3,
+  //     });
 
-      const anim2TL = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".animate-wrap2",
-          start: "top 80%",
-        },
-      });
-      anim2TL.from(".animate2", {
-        x: -30,
-        opacity: 0,
-        duration: 1,
-        stagger: 0.3,
-      });
+  //     const anim2TL = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: ".animate-wrap2",
+  //         start: "top 80%",
+  //       },
+  //     });
+  //     anim2TL.from(".animate2", {
+  //       x: -30,
+  //       opacity: 0,
+  //       duration: 1,
+  //       stagger: 0.3,
+  //     });
 
-      const anim3TL = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".animate-wrap3",
-          start: "top 80%",
-        },
-      });
-      anim3TL.from(".animate3", {
-        y: 50,
-        opacity: 0,
-        duration: 1,
-        stagger: 0.3,
-      });
-    },
-    { scope: exploreRef }
-  );
+  //     const anim3TL = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: ".animate-wrap3",
+  //         start: "top 80%",
+  //       },
+  //     });
+  //     anim3TL.from(".animate3", {
+  //       y: 50,
+  //       opacity: 0,
+  //       duration: 1,
+  //       stagger: 0.3,
+  //     });
+  //   },
+  //   { scope: exploreRef }
+  // );
 
   return (
     <div

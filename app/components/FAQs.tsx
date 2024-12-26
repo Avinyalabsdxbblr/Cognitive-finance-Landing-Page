@@ -14,21 +14,21 @@ const FAQs = () => {
   const [isOpen, setIsOpen] = useState<null | number>(null);
 
   const faqRef = useRef<any>();
-  useGSAP(
-    () => {
-      const faqTL = gsap.timeline({
-        scrollTrigger: {
-          trigger: faqRef.current,
-          start: "top 80%",
-        },
-      });
-      faqTL
-        .from(".animate1", { y: 20, opacity: 0 })
-        .from(".animate2", { y: 20, opacity: 0 })
-        .from(".animate3", { x: -30, opacity: 0, duration: 1, stagger: 0.3 });
-    },
-    { scope: faqRef }
-  );
+  // useGSAP(
+  //   () => {
+  //     const faqTL = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: faqRef.current,
+  //         start: "top 80%",
+  //       },
+  //     });
+  //     faqTL
+  //       .from(".animate1", { y: 20, opacity: 0 })
+  //       .from(".animate2", { y: 20, opacity: 0 })
+  //       .from(".animate3", { x: -30, opacity: 0, duration: 1, stagger: 0.3 });
+  //   },
+  //   { scope: faqRef }
+  // );
 
   return (
     <div

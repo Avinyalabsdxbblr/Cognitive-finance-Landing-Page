@@ -14,23 +14,23 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Footer = () => {
   const footerRef = useRef<any>();
-  useGSAP(
-    () => {
-      const footerTL = gsap.timeline({
-        scrollTrigger: {
-          trigger: footerRef.current,
-          start: "top 80%",
-        },
-      });
-      footerTL.from(".animate1", {
-        x: -30,
-        opacity: 0,
-        duration: 1,
-        stagger: 0.3,
-      });
-    },
-    { scope: footerRef }
-  );
+  // useGSAP(
+  //   () => {
+  //     const footerTL = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: footerRef.current,
+  //         start: "top 80%",
+  //       },
+  //     });
+  //     footerTL.from(".animate1", {
+  //       x: -30,
+  //       opacity: 0,
+  //       duration: 1,
+  //       stagger: 0.3,
+  //     });
+  //   },
+  //   { scope: footerRef }
+  // );
 
   return (
     <footer

@@ -14,20 +14,20 @@ const Features = () => {
   const [isOpen, setIsOpen] = useState(0);
 
   const featuresRef = useRef<any>();
-  useGSAP(
-    () => {
-      const featuresTL = gsap.timeline({
-        scrollTrigger: {
-          trigger: featuresRef.current,
-          start: "top 80%",
-        },
-      });
-      featuresTL
-        .from(".animate1", { y: 50, opacity: 0 })
-        .to(".animate2", { x: 0, opacity: 1, stagger: 0.2 });
-    },
-    { scope: featuresRef }
-  );
+  // useGSAP(
+  //   () => {
+  //     const featuresTL = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: featuresRef.current,
+  //         start: "top 80%",
+  //       },
+  //     });
+  //     featuresTL
+  //       .from(".animate1", { y: 50, opacity: 0 })
+  //       .to(".animate2", { x: 0, opacity: 1, stagger: 0.2 });
+  //   },
+  //   { scope: featuresRef }
+  // );
 
   return (
     <div
@@ -66,13 +66,13 @@ const Features = () => {
             <div
               key={i}
               onClick={() => setIsOpen(i)}
-              className={`animate2 -translate-x-[50px] opacity-0 ${
+              className={`group animate2 ${
                 isOpen != i
                   ? "w-full md:w-[25%] xmd:w-[120px]"
                   : "w-full xmd:w-[360px]"
-              }  h-fit md:h-[450px] xl:h-[420px] bg-[#121212] rounded-[8px] duration-300 cursor-pointer overflow-hidden`}
+              } relative h-fit md:h-[450px] xl:h-[420px] bg-[#121212] hover:text-black rounded-[8px] duration-300 cursor-pointer overflow-hidden`}
             >
-              <div className="hidden md:block">
+              <div className="hidden md:block relative z-[2]">
                 {isOpen != i ? (
                   <div className="relative flex flex-col items-center pt-[10px]">
                     <p className="text-[23.5px] italic font-bold">0{i + 1}.</p>
@@ -88,13 +88,13 @@ const Features = () => {
                     <h1 className="mt-[10px] mb-[20px] text-[20px] font-bold font-Poppins">
                       {feature.title}
                     </h1>
-                    <p className="text-[#FFFFFFB2] leading-[28px]">
+                    <p className="text-[#FFFFFFB2] group-hover:text-black leading-[28px]">
                       {feature.text}
                     </p>
                   </div>
                 )}
               </div>
-              <div className="block md:hidden">
+              <div className="block md:hidden relative z-[2]">
                 <div className="py-[28px] px-[40px]">
                   <p className="text-[66.86px] italic font-bold leading-[1.1]">
                     0{i + 1}.
@@ -102,11 +102,13 @@ const Features = () => {
                   <h1 className="mt-[10px] mb-[20px] text-[20px] font-bold font-Poppins">
                     {feature.title}
                   </h1>
-                  <p className="text-[#FFFFFFB2] leading-[28px]">
+                  <p className="text-[#FFFFFFB2] group-hover:text-black leading-[28px]">
                     {feature.text}
                   </p>
                 </div>
               </div>
+
+              <div className="absolute top-0 left-0 h-full w-0 group-hover:w-full duration-300 bg-[white]"></div>
             </div>
           ))}
         </div>

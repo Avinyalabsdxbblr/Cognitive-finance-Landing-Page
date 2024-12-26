@@ -20,6 +20,9 @@ html {
   footer .links h1 {
     @apply text-[20px] font-bold text-[#FFFFFF];
   }
+  footer .links a {
+    @apply vsm:opacity-80 hover:opacity-100 duration-300;
+  }
 }
 
 .boxShadow {

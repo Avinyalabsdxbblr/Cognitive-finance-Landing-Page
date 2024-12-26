@@ -13,20 +13,20 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Reason = () => {
   const reasonRef = useRef<any>();
-  useGSAP(
-    () => {
-      const reasonTL = gsap.timeline({
-        scrollTrigger: {
-          trigger: reasonRef.current,
-          start: "top 80%",
-        },
-      });
-      reasonTL
-        .from(".animate1", { y: 50, opacity: 0 })
-        .from(".animate2", { x: -30, opacity: 0, duration: 1, stagger: 0.3 });
-    },
-    { scope: reasonRef }
-  );
+  // useGSAP(
+  //   () => {
+  //     const reasonTL = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: reasonRef.current,
+  //         start: "top 80%",
+  //       },
+  //     });
+  //     reasonTL
+  //       .from(".animate1", { y: 50, opacity: 0 })
+  //       .from(".animate2", { x: -30, opacity: 0, duration: 1, stagger: 0.3 });
+  //   },
+  //   { scope: reasonRef }
+  // );
 
   return (
     <div

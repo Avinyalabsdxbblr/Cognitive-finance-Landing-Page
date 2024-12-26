@@ -19,8 +19,6 @@ export default function Home() {
       <FAQs />
       <Contact />
       <Footer />
-
-      <Preloader />
     </div>
   );
 }
