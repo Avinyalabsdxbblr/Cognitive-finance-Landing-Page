@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { GlobalProvider } from "./context/GlobalContext";
+import { ThirdwebProvider } from "thirdweb/react";
 
 export const metadata: Metadata = {
   title: "Cognitive Finance",
@@ -43,7 +44,9 @@ export default function RootLayout({
         <link rel="icon" href="/logo.png" sizes="any" />
       </head>
       <body className="font-Inter">
-        <GlobalProvider>{children}</GlobalProvider>
+        <ThirdwebProvider>
+          <GlobalProvider>{children}</GlobalProvider>
+        </ThirdwebProvider>
       </body>
     </html>
   );
