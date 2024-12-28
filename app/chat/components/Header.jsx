@@ -13,11 +13,14 @@ const Header = () => {
     <div className="px-[20px] sm:px-[50px] py-[20px] flex items-center justify-between">
       <div className="flex items-center">
         {!menuState && (
-          <button onClick={() => setMenuState(!menuState)}>
-            <MenuIcon className="mr-[30px] text-[30px]" />
+          <button
+            className="lg:hidden"
+            onClick={() => setMenuState(!menuState)}
+          >
+            <MenuIcon className="mr-[10px] vsm:mr-[30px] text-[30px] " />
           </button>
         )}
-        <Link className="relative z-[6]" href="/">
+        <Link className="relative" href="/">
           <Image width={48} height={44} src="/logo.svg" alt="logo" />
         </Link>
       </div>

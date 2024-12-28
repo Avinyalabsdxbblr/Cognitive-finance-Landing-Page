@@ -66,3 +66,18 @@ html {
 .chat-page .chat-container::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(45deg, #5733cc, #33e6b8);
 }
+
+@media (max-width: 450px) {
+  .chat-page .chat-container::-webkit-scrollbar {
+    width: auto;
+    height: auto;
+  }
+
+  .chat-page .chat-container::-webkit-scrollbar-track,
+  .chat-page .chat-container::-webkit-scrollbar-thumb,
+  .chat-page .chat-container::-webkit-scrollbar-thumb:hover {
+    background: initial;
+    border-radius: initial;
+    border: initial;
+  }
+}

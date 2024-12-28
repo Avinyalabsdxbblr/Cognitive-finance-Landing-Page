@@ -4,12 +4,12 @@ import { TbReload } from "react-icons/tb";
 
 const AiMessage = () => {
   return (
-    <div className="w-full flex gap-[15px]">
-      <div className="my-[9px] size-[40px] rounded-full border border-[#E2E8F0] grid place-items-center">
+    <div className="w-full flex gap-[10px] sm:gap-[15px]">
+      <div className="my-[9px] size-[35px] sm:size-[40px] overflow-hidden rounded-full border border-[#E2E8F0] grid place-items-center">
         <Image src="/AIAvatar.svg" alt="Ai Avatar" width={40} height={40} />
       </div>
       <div className="flex-1">
-        <div className="w-full min-h-[60px] px-[20px] py-[10px] bg-[white] rounded-[14px]">
+        <div className="w-full min-h-[60px] px-[10px] sm:px-[20px] py-[10px] bg-[white] rounded-[14px]">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure,
           voluptatum. Ad quos deserunt corporis modi magnam animi tempore.
           Blanditiis voluptatum eveniet fuga enim non itaque placeat perferendis
@@ -23,9 +23,12 @@ const AiMessage = () => {
           molestias repellendus debitis nihil numquam reiciendis architecto
           quibusdam minus consequatur ratione fugiat. Maiores.
         </div>
-        <button className="mx-auto mt-[5px] w-[218px] h-[54px] flex justify-center items-center gap-[5px] border border-[#E2E8F0] rounded-[45px] text-[#1B2559]">
+
+        <button className="ml-auto sm:mx-auto mt-[5px] size-[30px] sm:w-[218px] sm:h-[54px] flex justify-center items-center gap-[5px] border border-[#E2E8F0] rounded-[45px] text-[#1B2559]">
           <TbReload />
-          <p className="text-[14px] font-[600]">Regenerate Response</p>
+          <p className="text-[14px] font-[600] hidden sm:block">
+            Regenerate Response
+          </p>
         </button>
       </div>
     </div>

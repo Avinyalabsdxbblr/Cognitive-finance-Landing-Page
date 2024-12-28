@@ -14,13 +14,14 @@ const layout = ({ children }: { children: React.ReactNode }) => {
   const text = "AI Chat Tool Ethicsssssssssssssssss";
 
   return (
-    <div className="chat-page flex h-screen max-w-[1900px] mx-auto font-Inter">
+    <div className="chat-page relative flex h-screen max-w-[1900px] mx-auto font-Inter">
       <div
         className={`${
-          !menuState ? "hidden lg:flex" : ""
-        } w-[20%] pt-[20px] bg-[white] h-full border border-r-[#1C1C1C1A] flex flex-col items-center`}
+          !menuState ? "absolute top-0 left-[-100vw]" : "absolute left-0"
+        } lg:static duration-300 z-[5] w-[80%] sm:w-[50%] lg:w-[20%] pt-[20px] bg-[white] h-full border border-r-[#1C1C1C1A] flex flex-col items-center`}
       >
         <Link
+          onClick={() => setMenuState(false)}
           href="/chat"
           className="w-[85%] h-[40px] bg-[#1C1C1C] rounded-[12px] flex items-center justify-center gap-[10px] text-white"
         >
@@ -29,7 +30,11 @@ const layout = ({ children }: { children: React.ReactNode }) => {
         </Link>
 
         <div className="mt-[20px] w-[78%] flex flex-col gap-[10px]">
-          <Link href="/chat/12002nsi" className="flex items-center gap-[10px]">
+          <Link
+            onClick={() => setMenuState(false)}
+            href="/chat/12002nsi"
+            className="flex items-center gap-[10px]"
+          >
             <PiChatText className="text-[24px]" />
             <p className="text-[14px] text-[#1C1C1C]">
               {text.length > 20 ? text.slice(0, 20) + "..." : text}
@@ -56,6 +61,13 @@ const layout = ({ children }: { children: React.ReactNode }) => {
       </div>
 
       <div className="main flex-1 h-full font-PlusJakartaSans">{children}</div>
+
+      {menuState && (
+        <div
+          onClick={() => setMenuState(false)}
+          className="absolute left-0 top-0 z-[2] h-full w-full bg-[black]/30"
+        ></div>
+      )}
     </div>
   );
 };
