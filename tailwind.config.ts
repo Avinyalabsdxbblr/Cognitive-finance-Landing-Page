@@ -17,6 +17,7 @@ const config: Config = {
         Inter: ["Inter", "sans-serif"],
         Poppins: ["Poppins", "sans-serif"],
         Sora: ["Sora", "sans-serif"],
+        PlusJakartaSans: ["Plus Jakarta Sans", "serif"],
       },
       colors: {
         black: "#1A2B3B",
