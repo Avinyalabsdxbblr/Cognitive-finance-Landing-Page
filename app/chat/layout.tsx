@@ -8,8 +8,9 @@ import Link from "next/link";
 
 const layout = ({ children }: { children: React.ReactNode }) => {
   const text = "AI Chat Tool Ethicsssssssssssssssss";
+
   return (
-    <div className="chat-page flex h-screen font-Inter">
+    <div className="chat-page flex h-screen max-w-[1900px] mx-auto font-Inter">
       <div className="w-[20%] pt-[20px] bg-[white] h-full border border-r-[#1C1C1C1A] flex flex-col items-center">
         <Link
           href="/chat"

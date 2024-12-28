@@ -45,3 +45,24 @@ html {
   background: linear-gradient(15.46deg, #91bef7 26.3%, #2763ad 86.4%);
   box-shadow: 0px 21px 27px -10px #90bff766;
 }
+
+.chat-page .chat-container::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+
+.chat-page .chat-container::-webkit-scrollbar-track {
+  background: #f4f4f4;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.chat-page .chat-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #6a44ff, #44ffc7);
+  border-radius: 10px;
+  border: 2px solid #f4f4f4;
+}
+
+.chat-page .chat-container::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #5733cc, #33e6b8);
+}
