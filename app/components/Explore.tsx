@@ -66,15 +66,15 @@ const Explore = () => {
         Supercharge Your On-Chain Experience
       </h1>
       <div className="animate1 hidden lg:grid mt-[20px] w-fit mx-auto grid-cols-3 gap-x-[10px] gap-y-[25px] justify-center">
-        {items.map((text) => (
-          <Label text={text} />
+        {items.map((item, i) => (
+          <Label key={i} item={item} />
         ))}
       </div>
       <div className="animate1 lg:hidden mt-[20px] w-full flex flex-col items-center gap-y-[10px] vsm:gap-y-[20px] md:gap-y-[25px] justify-center">
         {items
           .filter((item, i) => i < 5)
-          .map((text) => (
-            <Label text={text} />
+          .map((item, i) => (
+            <Label key={i} item={item} />
           ))}
       </div>
 
@@ -159,22 +159,60 @@ const Explore = () => {
 
 export default Explore;
 
-const Label = ({ text }: { text: string }) => {
+const Label = ({ item }: { item: any }) => {
   return (
-    <div className="w-[70%] md:w-[50%] lg:w-[100%] px-[14px] py-[4px] grid place-items-center bg-[#6A44FF1F] border border-[#6A44FF] rounded-[39px] font-[500] text-[#6943FF]">
-      <p className="text-center">{text}</p>
+    <div
+      style={{
+        backgroundColor: item.color.bg,
+        borderColor: item.color.border,
+        color: item.color.border,
+      }}
+      className="w-[70%] md:w-[50%] lg:w-[100%] h-[33px] overflow-hidden px-[14px] py-[4px] grid place-items-center 
+     border rounded-[39px] font-[500] hover:bg-[black] duration-300 group cursor-pointer"
+    >
+      <div className="w-full flex flex-col items-center gap-[10px] group-hover:translate-y-[-34px] duration-300">
+        <p className="text-center">{item.text}</p>
+        <p className="text-center">{item.text}</p>
+      </div>
     </div>
   );
 };
 
 const items = [
-  "Convert 10 Eth to BTC",
-  "Convert 500 USDT to XRP",
-  "Convert 5 ETH to USDT",
-  "Convert 10 Eth to USDC",
-  "Convert 2 BTC to ETH",
-  "Convert 1,000 USDC to USDT",
-  "Convert 20 XRP to ADA",
-  "Convert 0.5 BTC to BNB",
-  "Convert 100 ADA to SOL",
+  {
+    text: "Convert 10 Eth to BTC",
+    color: { bg: "#6A44FF1F", border: "#6A44FF" },
+  },
+  {
+    text: "Convert 500 USDT to XRP",
+    color: { bg: "#FF5C5C1F", border: "#FF5C5C" },
+  },
+  {
+    text: "Convert 5 ETH to USDT",
+    color: { bg: "#44FFC733", border: "#3CBF9B" },
+  },
+  {
+    text: "Convert 10 Eth to USDC",
+    color: { bg: "#FFB3441F", border: "#FFB344" },
+  },
+  {
+    text: "Convert 2 BTC to ETH",
+    color: { bg: "#1F9EFF1F", border: "#1F9EFF" },
+  },
+  {
+    text: "Convert 1,000 USDC to USDT",
+    color: { bg: "#FF44A31F", border: "#FF44A3" },
+  },
+  {
+    text: "Convert 20 XRP to ADA",
+    color: { bg: "#91FF4450", border: "#71B336" },
+  },
+  {
+    text: "Convert 0.5 BTC to BNB",
+    color: { bg: "#FFC4441F", border: "#FFC444" },
+  },
+  {
+    text: "Convert 100 ADA to SOL",
+    color: { bg: "#6E24C31F", border: "#6E24C3" },
+  },
 ];

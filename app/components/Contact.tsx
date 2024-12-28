@@ -40,10 +40,10 @@ const Contact = () => {
       <p className="animate1 relative z-[2] mb-[20px] text-center text-[36px] font-bold font-Poppins text-[#141414]">
         Get in touch
       </p>
-      <p className="animate1 relative z-[2] max-w-[80%] text-center font-bold 2xl:text-[20px] font-Poppins">
+      <p className="animate1 relative z-[2] max-w-[80%] text-center font-medium vsm:font-bold 2xl:text-[20px] font-Poppins">
         Contact us via email{" "}
-        <span className="underline">support@cognitivefinance.xyz</span> or
-        Telegram <span className="underline">@cognitivefinance_xyz.</span>
+        <span className="underline">support@cognitivefinance.xyz</span> Telegram{" "}
+        <span className="underline">@cognitivefinance_xyz.</span>
       </p>
 
       <div className="animate1 relative z-[2] mt-[40px] mb-[50px] flex flex-col md:flex-row items-center justify-center gap-[10px] md:gap-[20px]">
