@@ -18,11 +18,7 @@ const page = () => {
       </div>
 
       <div className="h-[130px] sm:h-[100px] pt-[5px] px-[20px] sm:px-[50px] flex justify-end gap-[15px]">
-        <input
-          type="text"
-          className="w-full sm:w-[71%] h-[45px] sm:h-[54px] border border-[#E2E8F0] rounded-[45px] px-[20px] outline-none"
-          placeholder="Enter your question"
-        />
+        <textarea className="w-full sm:w-[71%] h-[45px] sm:h-[54px] border border-[#E2E8F0] rounded-[45px] px-[20px] outline-none resize-none"></textarea>
         <button className="chat-btn w-[100px] sm:w-[192px] h-[45px] sm:h-[54px] rounded-[45px] text-[14px] font-[600] text-white">
           Submit
         </button>
