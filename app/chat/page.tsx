@@ -17,7 +17,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="h-[80px] sm:h-[100px] pt-[5px] px-[20px] sm:px-[50px] flex justify-end gap-[15px]">
+      <div className="h-[130px] sm:h-[100px] pt-[5px] px-[20px] sm:px-[50px] flex justify-end gap-[15px]">
         <input
           type="text"
           className="w-full sm:w-[71%] h-[45px] sm:h-[54px] border border-[#E2E8F0] rounded-[45px] px-[20px] outline-none"
