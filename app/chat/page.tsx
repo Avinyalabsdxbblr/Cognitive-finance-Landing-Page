@@ -1,23 +1,21 @@
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-import { MdOutlineKeyboardArrowRight as Arrow } from "react-icons/md";
+import Header from "./components/Header.jsx";
+import UserMessage from "./components/UserMessage.jsx";
+import AiMessage from "./components/AiMessage.jsx";
 
 const page = () => {
   return (
     <div className="relative size-full flex flex-col">
-      <div className="px-[50px] py-[20px] flex items-center justify-between">
-        <Link className="relative z-[6]" href="/">
-          <Image width={48} height={44} src="/logo.svg" alt="logo" />
-        </Link>
+      <Header />
 
-        <button className="w-[161px] h-[40px] flex items-center gap-[5px] justify-center bg-[#1A2B3B] rounded-[8px] text-white">
-          <p className="font-[500] text-[14px]">Connect wallet</p>
-          <Arrow className="text-[20px]" />
-        </button>
+      <div className="chat-container mt-[10px] flex-1 px-[50px] h-full overflow-y-auto pb-[30px]">
+        <div className="h-fit w-full flex flex-col gap-[20px]">
+          {/* <UserMessage />
+          <AiMessage />
+          <UserMessage />
+          <AiMessage /> */}
+        </div>
       </div>
-
-      <div className="mt-[10px] flex-1 px-[50px] flex flex-col gap-[20px]"></div>
 
       <div className="h-[100px] pt-[5px] px-[50px] flex justify-end gap-[15px]">
         <input

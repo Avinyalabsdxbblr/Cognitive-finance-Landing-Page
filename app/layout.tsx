@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { GlobalProvider } from "./context/GlobalContext";
 
 export const metadata: Metadata = {
   title: "Cognitive Finance",
@@ -41,7 +42,9 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/logo.png" sizes="any" />
       </head>
-      <body className="font-Inter">{children}</body>
+      <body className="font-Inter">
+        <GlobalProvider>{children}</GlobalProvider>
+      </body>
     </html>
   );
 }

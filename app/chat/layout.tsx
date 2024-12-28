@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { FiPlus } from "react-icons/fi";
 import { PiChatText } from "react-icons/pi";
@@ -5,13 +6,20 @@ import { BiTrash as Delete } from "react-icons/bi";
 import { PiArrowSquareOut as ShareIcon } from "react-icons/pi";
 import { FiSun as Bright } from "react-icons/fi";
 import Link from "next/link";
+import { useGlobalContext } from "../context/GlobalContext";
 
 const layout = ({ children }: { children: React.ReactNode }) => {
+  const { menuState, setMenuState } = useGlobalContext();
+
   const text = "AI Chat Tool Ethicsssssssssssssssss";
 
   return (
     <div className="chat-page flex h-screen max-w-[1900px] mx-auto font-Inter">
-      <div className="w-[20%] pt-[20px] bg-[white] h-full border border-r-[#1C1C1C1A] flex flex-col items-center">
+      <div
+        className={`${
+          !menuState ? "hidden lg:flex" : ""
+        } w-[20%] pt-[20px] bg-[white] h-full border border-r-[#1C1C1C1A] flex flex-col items-center`}
+      >
         <Link
           href="/chat"
           className="w-[85%] h-[40px] bg-[#1C1C1C] rounded-[12px] flex items-center justify-center gap-[10px] text-white"
