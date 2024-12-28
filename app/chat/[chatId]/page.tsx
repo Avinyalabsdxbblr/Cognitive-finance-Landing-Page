@@ -1,7 +1,7 @@
 import React from "react";
 import UserMessage from "../components/UserMessage";
 import AiMessage from "../components/AiMessage";
-import Header from "../components/Header.jsx";
+import Header from "../components/Header";
 
 const page = () => {
   return (
