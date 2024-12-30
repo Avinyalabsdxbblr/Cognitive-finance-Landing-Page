@@ -1,6 +1,7 @@
 import React from "react";
 import LeftNav from "./components/LeftNav";
 import MenuCover from "./components/MenuCover";
+import LayoutChild from "./components/LayoutChild";
 
 export const generateMetadata = async () => {
   return {
@@ -35,15 +36,7 @@ export const generateMetadata = async () => {
 };
 
 const layout = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <div className="chat-page relative flex h-screen max-w-[1900px] mx-auto font-Inter">
-      <LeftNav />
-
-      <div className="main flex-1 h-full font-PlusJakartaSans">{children}</div>
-
-      <MenuCover />
-    </div>
-  );
+  return <LayoutChild children={children} />;
 };
 
 export default layout;

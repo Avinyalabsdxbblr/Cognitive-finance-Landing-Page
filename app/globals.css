@@ -81,3 +81,27 @@ html {
     border: initial;
   }
 }
+
+/* Add to your global CSS or Tailwind config */
+.react-markdown p {
+  margin-bottom: 1rem; /* Adds spacing after paragraphs */
+}
+
+.react-markdown h3 {
+  margin-top: 1.5rem; /* Adds spacing above headings */
+  margin-bottom: 0.5rem; /* Adds spacing below headings */
+}
+
+.react-markdown ul,
+.react-markdown ol {
+  margin-left: 1.5rem; /* Indentation for lists */
+  margin-bottom: 1rem; /* Adds spacing below the list */
+}
+
+.react-markdown li {
+  margin-bottom: 0.5rem; /* Adds spacing between list items */
+}
+
+.react-markdown hr {
+  margin: 1.5rem 0; /* Adds spacing before and after horizontal rule */
+}

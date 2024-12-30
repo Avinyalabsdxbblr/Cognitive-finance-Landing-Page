@@ -10,12 +10,22 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
+    "@reown/appkit": "^1.6.2",
+    "@reown/appkit-adapter-wagmi": "^1.6.2",
+    "@swing.xyz/sdk": "^0.63.0",
+    "@tanstack/react-query": "^5.62.11",
+    "ethers": "^6.13.4",
     "gsap": "^3.12.5",
     "next": "15.0.2",
+    "pino-pretty": "^13.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.3.0",
-    "thirdweb": "^5.80.0"
+    "react-markdown": "^9.0.1",
+    "remark-breaks": "^4.0.0",
+    "thirdweb": "^5.80.0",
+    "viem": "^2.21.59",
+    "wagmi": "^2.14.6"
   },
   "devDependencies": {
     "@types/node": "^20",

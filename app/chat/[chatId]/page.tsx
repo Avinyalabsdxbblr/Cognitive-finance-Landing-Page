@@ -10,10 +10,10 @@ const page = () => {
 
       <div className="chat-container mt-[10px] flex-1 px-[20px] sm:px-[50px] h-full overflow-y-auto pb-[30px]">
         <div className="h-fit w-full flex flex-col gap-[20px]">
-          <UserMessage />
+          {/* <UserMessage />
           <AiMessage />
           <UserMessage />
-          <AiMessage />
+          <AiMessage /> */}
         </div>
       </div>
 

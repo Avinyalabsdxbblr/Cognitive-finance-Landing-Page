@@ -29,7 +29,7 @@ const LeftNav = () => {
       </Link>
 
       <div className="mt-[20px] w-[78%] flex flex-col gap-[10px]">
-        <Link
+        {/* <Link
           onClick={() => setMenuState(false)}
           href="/chat/12002nsi"
           className="flex items-center gap-[10px]"
@@ -38,7 +38,7 @@ const LeftNav = () => {
           <p className="text-[14px] text-[#1C1C1C]">
             {text.length > 20 ? text.slice(0, 20) + "..." : text}
           </p>
-        </Link>
+        </Link> */}
       </div>
 
       <div className="mt-auto border-t border-t-[#1C1C1C1A] w-full py-[25px]">
