@@ -6,7 +6,8 @@ const Button = () => {
   return (
     <a
       href="https://cognitive-ui.vercel.app/"
-      target="blank"
+      target="_blank"
+      rel="noopener noreferrer"
       className="bumt group w-[126px] h-[40px] flex items-center gap-[2px] justify-center bg-[#1A2B3B] rounded-[8px] text-white"
     >
       <p className="mr-[-20px] group-hover:mr-0 duration-300 font-[500] text-[14px]">
