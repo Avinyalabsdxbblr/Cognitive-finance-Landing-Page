@@ -32,8 +32,6 @@ createAppKit({
   metadata,
   features: {
     analytics: true, // Optional - defaults to your Cloud configuration
-    email: false,
-    socials: [],
   },
 });
 

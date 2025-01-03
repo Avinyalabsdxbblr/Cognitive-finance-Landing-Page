@@ -7,7 +7,8 @@ import { useAuth } from "@/app/context/AuthContext";
 import ConnectWallet from "./ConnectWallet";
 
 const LayoutChild = ({ children }: { children: React.ReactNode }) => {
-  const { login, isAuthenticated } = useAuth();
+  const { isAuthenticated, address } = useAuth();
+  console.log(address);
   return (
     <>
       {isAuthenticated ? (
