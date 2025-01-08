@@ -40,7 +40,7 @@ const sections = [
   "about",
   "pricing",
   "features",
-  "integration",
-  "blog",
+  // "integration",
+  // "blog",
   "contact",
 ];

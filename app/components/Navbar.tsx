@@ -13,8 +13,8 @@ const Navbar = () => {
     "about",
     "pricing",
     "features",
-    "integration",
-    "blog",
+    // "integration",
+    // "blog",
     "contact",
   ];
   const [isOpen, setIsOpen] = useState(false);

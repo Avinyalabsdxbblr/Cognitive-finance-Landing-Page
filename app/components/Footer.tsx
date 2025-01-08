@@ -45,9 +45,15 @@ const Footer = () => {
             intent-centric platform
           </p>
           <div className="flex items-center gap-[20px] text-[20px]">
-            <Yt />
-            <Ln />
-            <Tw />
+            {/* <Yt />
+            <Ln /> */}
+            <a
+              href=" https://x.com/cognitive_xyz"
+              target="blank"
+              rel="noopener noreferrer"
+            >
+              <Tw />
+            </a>
           </div>
         </div>
 
