@@ -53,7 +53,7 @@ const About = () => {
         />
       </div>
 
-      <div className="mt-[100px] vsm:mt-[150px]">
+      <div id="partners" className="mt-[100px] vsm:mt-[150px]">
         <h1 className="text-[20px] font-[600] font-Poppins text-center text-[#36394A]">
           Multichain support
         </h1>

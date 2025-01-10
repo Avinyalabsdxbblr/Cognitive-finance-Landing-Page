@@ -32,6 +32,7 @@ const FAQs = () => {
 
   return (
     <div
+      id="FAQ"
       ref={faqRef}
       className="mt-[100px] vsm:mt-[200px] mb-[50px] sm:mb-[100px]"
     >

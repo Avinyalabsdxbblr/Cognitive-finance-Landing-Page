@@ -1,33 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState } from "react";
-
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { useRef } from "react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(useGSAP, ScrollTrigger);
+import React, { useState, useRef } from "react";
 
 const Features = () => {
   const [isOpen, setIsOpen] = useState(0);
 
   const featuresRef = useRef<any>();
-  // useGSAP(
-  //   () => {
-  //     const featuresTL = gsap.timeline({
-  //       scrollTrigger: {
-  //         trigger: featuresRef.current,
-  //         start: "top 80%",
-  //       },
-  //     });
-  //     featuresTL
-  //       .from(".animate1", { y: 50, opacity: 0 })
-  //       .to(".animate2", { x: 0, opacity: 1, stagger: 0.2 });
-  //   },
-  //   { scope: featuresRef }
-  // );
 
   return (
     <div
@@ -38,9 +17,6 @@ const Features = () => {
       <h1 className="animate1 pt-[50px] vsm:pt-[120px] pl-[20px] vsm:pl-[40px] xmd:pl-[100px] text-[48px] font-[600] font-Poppins leading-[1.1]">
         Explore Our Features
       </h1>
-      {/* <div className="hidden xmd:block absolute right-0 top-[-170px] w-[40%] aspect-square">
-        <Image fill className="object-contain" src="/lappy.png" alt="laptop" />
-      </div> */}
 
       <div className="mt-[50px] xmd:mt-[220px] relative w-full">
         <div className="absolute left-0 w-[300px] aspect-square">
@@ -61,7 +37,7 @@ const Features = () => {
           alt="star"
         />
 
-        <div className=" px-[20px] vsm:px-[30px] relative ml-0 xmd:ml-[200px] lg:ml-[400px] flex flex-col md:flex-row gap-[20px]">
+        <div className="px-[20px] vsm:px-[30px] relative ml-0 xmd:ml-[200px] lg:ml-[400px] 2xl:ml-[40vw] flex flex-col md:flex-row gap-[20px]">
           {features.map((feature, i) => (
             <div
               key={i}

@@ -36,11 +36,4 @@ const MobileMenu = ({
 
 export default MobileMenu;
 
-const sections = [
-  "about",
-  "pricing",
-  "features",
-  // "integration",
-  // "blog",
-  "contact",
-];
+const sections = ["about", "partners", "features", "FAQ", "contact"];

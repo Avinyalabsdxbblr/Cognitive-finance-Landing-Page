@@ -62,8 +62,7 @@ const Footer = () => {
             <h1>Company</h1>
             <Link href="#reason">Why Us?</Link>
             <Link href="#contact">Contact Us</Link>
-            <Link href="">Blog</Link>
-            <Link href="">FAQ</Link>
+            <Link href="#FAQ">FAQ</Link>
           </div>
           <div className="animate1 links">
             <h1>Resources</h1>
@@ -84,7 +83,7 @@ const Footer = () => {
 
       <div className="border-t border-t-[#272C39] py-[20px] grid place-items-center">
         <p className="text-[14px] ">
-          ©CognitiveFinance 2024. All rights reserved
+          ©Cognitive Finance {new Date().getFullYear()}. All rights reserved
         </p>
       </div>
     </footer>

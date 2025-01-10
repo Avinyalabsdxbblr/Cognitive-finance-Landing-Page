@@ -9,18 +9,11 @@ import { LiaTimesSolid as Times } from "react-icons/lia";
 import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
-  const sections = [
-    "about",
-    "pricing",
-    "features",
-    // "integration",
-    // "blog",
-    "contact",
-  ];
+  const sections = ["about", "partners", "features", "FAQ", "contact"];
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="relative z-[5] w-full px-[30px] py-[20px] flex justify-between xmd:justify-center xmd:gap-[100px] items-center">
+    <nav className="relative z-[5] w-full px-[30px] py-[20px] flex justify-between xmd:justify-center xmd:gap-[130px] items-center">
       <Link className="relative z-[6]" href="/">
         <Image width={48} height={44} src="/logo.svg" alt="logo" />
       </Link>
