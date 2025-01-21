@@ -30,11 +30,11 @@ const Hero = () => {
   return (
     <div
       ref={heroRef}
-      className="hero relative w-full min-h-[90vh] vsm:min-h-[830px]"
+      className="hero relative w-full flex flex-col min-h-[90vh] vsm:min-h-[830px]"
     >
       <Navbar />
 
-      <div className="relative z-[2] mt-[60px] xmd:mt-[100px]">
+      <div className="relative flex flex-1 pb-40 flex-col justify-center h-full items-center z-[2] pt-[160px]">
         <h1 className="animate1 text-[34px] vsm:text-[48px] md:text-[65px] xmd:text-[90px] font-bold text-center text-[#1A2B3B] font-Poppins leading-[1.2] xmd:leading-[90px]">
           Cognitive Finance
         </h1>

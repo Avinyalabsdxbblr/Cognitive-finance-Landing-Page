@@ -13,7 +13,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="relative z-[5] w-full px-[30px] py-[20px] flex justify-between xmd:justify-center xmd:gap-[130px] items-center">
+    <nav className="fixed backdrop-blur-lg bg-white bg-opacity-25 top-0 z-[5] w-full py-6 px-[40px] flex justify-between  xmd:gap-[130px] items-center">
       <Link className="relative z-[6]" href="/">
         <Image width={48} height={44} src="/logo.svg" alt="logo" />
       </Link>

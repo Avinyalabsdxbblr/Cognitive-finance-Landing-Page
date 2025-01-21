@@ -79,53 +79,16 @@ const Explore = () => {
       </div>
 
       <div className="animate-wrap2 px-[20px] vsm:px-[50px] mt-[100px] vsm:mt-[200px] flex flex-col lg:flex-row items-center justify-center gap-[50px] lg:gap-[100px]">
-        <div className="animate2 lg:w-[40%]">
-          <h1 className="text-[30px] vsm:text-[36px] font-Poppins font-[600] leading-[1.2] vsm:leading-[60px] text-[#000000]">
-            Prioritizing Security & <br className="hidden sm:block" />{" "}
-            Compliance
+        <div className="animate2 max-w-2xl">
+          <h1 className="text-[64px] vsm:text-[64px] font-Poppins text-center font-[600] leading-[1.2] vsm:leading-[60px] text-[#000000]">
+            Prioritizing Security & Compliance
           </h1>
-          <p className="mt-[20px] mb-[20px] vsm:mb-[30px] vsm:text-[20px] text-[#000000]">
+          <p className="mt-[60px] text-center mb-[20px] vsm:mb-[30px] vsm:text-[20px] text-[#000000]">
             Cognitive Finance is committed to upholding the highest standards of
             security and regulatory compliance. Our smart contracts and
             processes undergo rigorous audits to ensure a secure and dependable
             platform for our users.
           </p>
-          <Button />
-        </div>
-
-        <div className="animate2 relative max-w-[560px] w-full lg:w-[40%] h-[250px] xmd:h-[300px] rounded-[12px]">
-          <div className="hidden vsm:block relative w-full h-full bg-[#2CAEE9] rounded-[12px] px-[40px] py-[20px]">
-            <ul className="text-[13px] text-white leading-[20px]">
-              <li>
-                <span className="text-[#687887] mr-[15px]">1</span> await
-                increase.achTransfers.create
-              </li>
-              <li>
-                <span className="text-[#687887] mr-[20px]">2</span> account_id:{" "}
-                <span className="text-[#31F2CC]">
-                  'account_in71c4amph0vgo2qllky'
-                </span>
-                ,
-              </li>
-              <li>
-                <span className="text-[#687887] mr-[20px]">3</span> amount:{" "}
-                <span className="text-[#DDFF33]">81634</span>,
-              </li>
-              <li>
-                <span className="text-[#687887] mr-[20px]">4</span> currency:{" "}
-                <span className="text-[#31F2CC]">'USD'</span>,
-              </li>
-            </ul>
-          </div>
-          <div className="w-full h-full absolute vsm:right-[20px] xmd:right-[40px] overflow-hidden vsm:top-[50px] xmd:top-[100px] border-[5px] border-[#8465FF] rounded-[16px]">
-            <Image
-              priority
-              className="object-cover"
-              fill
-              src="/chatImg.png"
-              alt="code"
-            />
-          </div>
         </div>
       </div>
 
