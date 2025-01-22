@@ -58,13 +58,13 @@ const About = () => {
         </div>
 
         <div className="animate-wrap mt-[100px] vsm:mt-[150px] px-[20px] vsm:px-[40px] flex flex-col-reverse lg:flex-row items-center justify-center gap-[50px] lg:gap-[100px]">
-          <div className="animate3 w-full lg:max-w-2xl">
-            <h1 className="text-[24px] vsm:text-[54px] text-center font-Poppins font-[600] leading-[1.4] text-[#000000]">
+          <div className="animate3 w-full lg:max-w-3xl">
+            <h1 className="text-[24px] vsm:text-[64px] text-center font-Poppins font-[600] leading-[1.4] text-[#000000]">
               Power up transactions with our ultra-fast, intent-driven
               interface!
             </h1>
-            <p className="mt-[60px] text-center mb-[30px] text-[32px] text-[#000000]">
-              Simplify your on-chain activities with Cognitive Finance.
+            <p className="mt-[54px] text-center mb-[30px] text-[21px] text-[#000000]">
+              Simplify your on-chain activities with Cognitive Finance
             </p>
           </div>
         </div>
