@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FaYoutube as Yt, FaLinkedinIn as Ln } from "react-icons/fa";
 import { FaXTwitter as Tw } from "react-icons/fa6";
 
 import gsap from "gsap";
@@ -45,12 +44,11 @@ const Footer = () => {
             intent-centric platform
           </p>
           <div className="flex items-center gap-[20px] text-[20px]">
-            {/* <Yt />
-            <Ln /> */}
             <a
               href=" https://x.com/cognitive_xyz"
               target="blank"
               rel="noopener noreferrer"
+              aria-label="Follow us on X (Twitter)"
             >
               <Tw />
             </a>
@@ -74,16 +72,25 @@ const Footer = () => {
 
           <div className="animate1 links">
             <h1>Legal</h1>
-            <Link href="">Terms of Service</Link>
-            <Link href="">Privacy Policy / GDPR</Link>
-            <Link href="">Cookie Policy</Link>
+            <a
+              target="blank"
+              href="https://docs.google.com/document/d/1HlxRyrmJ8Klsrpoj-x1hsfTQaCBxavrWC2JscYcdHvk/edit?usp=sharing"
+            >
+              Terms of Service
+            </a>
+            <a
+              rel="noopener noreferrer"
+              href="https://docs.google.com/document/d/1HlxRyrmJ8Klsrpoj-x1hsfTQaCBxavrWC2JscYcdHvk/edit?usp=sharing"
+            >
+              Privacy Policy
+            </a>
           </div>
         </div>
       </div>
 
       <div className="border-t border-t-[#272C39] py-[20px] grid place-items-center">
         <p className="text-[14px] ">
-          ©Cognitive Finance {new Date().getFullYear()}. All rights reserved
+          ©Cognitive Finance 2025. All rights reserved
         </p>
       </div>
     </footer>
