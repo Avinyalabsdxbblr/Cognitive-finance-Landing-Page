@@ -132,7 +132,7 @@ const PrivacyPolicy = () => {
 
       <p className="mt-6">
         For more details, contact us at{" "}
-        <strong>privacy@cognitivefinance.xyz</strong>.
+        <strong>contact@cognitivefinance.xyz</strong>.
       </p>
     </div>
   );
