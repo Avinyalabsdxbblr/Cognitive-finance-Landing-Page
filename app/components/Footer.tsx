@@ -72,16 +72,10 @@ const Footer = () => {
 
           <div className="animate1 links">
             <h1>Legal</h1>
-            <a
-              target="blank"
-              href="https://docs.google.com/document/d/1HlxRyrmJ8Klsrpoj-x1hsfTQaCBxavrWC2JscYcdHvk/edit?usp=sharing"
-            >
+            <a target="blank" href="#">
               Terms of Service
             </a>
-            <a
-              rel="noopener noreferrer"
-              href="https://docs.google.com/document/d/1HlxRyrmJ8Klsrpoj-x1hsfTQaCBxavrWC2JscYcdHvk/edit?usp=sharing"
-            >
+            <a rel="noopener noreferrer" href="#">
               Privacy Policy
             </a>
           </div>
