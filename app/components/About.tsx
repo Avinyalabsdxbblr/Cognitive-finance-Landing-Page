@@ -47,12 +47,20 @@ const About = () => {
         <h1 className="text-[20px] font-[600] font-Poppins text-center text-[#36394A]">
           Multichain support
         </h1>
-        <div className="mt-[10px] flex flex-wrap justify-center">
+        <div className="mt-[60px] gap-[72px] flex flex-wrap justify-center">
           <Image
             className="object-contain"
             width={160}
             height={56}
             src="/polyhedra.svg"
+            alt="brand"
+          />
+
+          <Image
+            className="object-contain"
+            width={160}
+            height={56}
+            src="/skale.svg"
             alt="brand"
           />
         </div>
